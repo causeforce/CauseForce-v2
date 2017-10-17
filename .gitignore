@@ -58,4 +58,4 @@ typings/
 .env
 
 # Wordpress Files
-/wp-includes
+wp-includes/
