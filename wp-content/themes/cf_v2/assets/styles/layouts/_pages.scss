@@ -1,0 +1,468 @@
+// ***                    *** //
+// **** Homepage Styling **** //
+// ***                    *** //
+.col-pic-row {
+    margin-top: 70px;
+    padding: 70px 0;
+    transition: all 0.3s ease-in-out;
+//    display: none;
+    .col-md-6.text-col {
+        min-height: 350px;
+        opacity: 0;
+        transition: all 0.4s ease-in-out;
+        transform: translateX(-200px);
+        p {
+            color: $blue;
+            padding: 110px 50px;
+            margin-bottom: 0px;
+            font-size: 22px;
+        }
+    }
+    .col-md-6.text-col.show {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    .col-md-6.picture-col {
+        background: url(/wp-content/themes/cf_v2/assets/images/col_img.jpg);
+        background-size: cover;
+        background-position: center center;
+        min-height: 350px;
+        opacity: 0;
+        transition: all 0.4s ease-in-out;
+        transform: translateX(-100px);
+    }
+    .col-md-6.picture-col.show {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+// Carousel Custom Styling
+
+.carousel-indicators li {
+    background-color: $orange;
+}
+.carousel-indicators .active {
+    background-color: $blue;
+}
+.carousel-indicators {
+    top: 50%;
+    margin: auto;
+    display: block;
+    left: 102%;
+}
+#carouselExampleIndicators .carousel-indicators {
+    .active {
+        background-color: $blue;
+    }
+    li {
+        background-color: transparent;
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        border: 2px solid #073564;
+        margin-bottom: 10px;
+    }
+}
+.carousel-control-next,
+.carousel-control-prev {
+    display: none;
+}
+
+// Gray Row
+.gray-row {
+    background: $gray;
+    color: $blue;
+    margin-top: 30px;
+    transition: all 0.3s ease-in-out;
+    .container {
+        .row {
+            padding: 70px 0px;
+        }
+    }
+    h4 {
+        padding-top: 10px;
+        &:first-child {
+            margin-bottom: 10px;
+        }
+    }
+    p {
+        font-family: "Din Light", Arial, sans-serif;
+        font-size: 14px;
+    }
+    svg {
+        display: block;
+        width: 50px;
+        margin: 0 auto;
+        margin-top: -10px;
+    }
+}
+// Light Bulb
+.st0 {
+  fill: #FFFFFF;
+}
+
+.st1 {
+  fill: none;
+  stroke: #FFFFFF;
+  stroke-width: 4;
+  stroke-miterlimit: 10;
+}
+
+.st2 {
+  fill: none;
+  opacity: .5;
+  stroke: #FFFFFF;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+}
+
+#one {
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-animation: line-glow 1s .1s 0s;
+  animation: line-glow 1s .1s 0s;
+}
+
+#two {
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-animation: line-glow 1s .2s 0s;
+  animation: line-glow 1s .2s 0s;
+}
+
+#three {
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-animation: line-glow 1s .3s 0s;
+  animation: line-glow 1s .3s 0s;
+}
+
+#four {
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-animation: line-glow 1s .4s 0s;
+  animation: line-glow 1s .4s 0s;
+}
+
+#five {
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-animation: line-glow 1s .5s 0s;
+  animation: line-glow 1s .5s 0s;
+}
+
+#six {
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-animation: line-glow 1s .6s 0s;
+  animation: line-glow 1s .6s 0s;
+}
+
+#seven {
+  -webkit-transform-origin: center;
+  -ms-transform-origin: center;
+  transform-origin: center;
+  -webkit-animation: line-glow 1s .7s 0s;
+  animation: line-glow 1s .7s 0s;
+}
+
+#bulb-body-fill {
+  -webkit-animation: bulb-on 1s ease 0s;
+  animation: bulb-on 1s ease 0s;
+}
+
+@-webkit-keyframes line-glow {
+  10% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+
+@keyframes line-glow {
+  10% {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes bulb-on {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes bulb-on {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+// Square Cube
+$squarew: 10px;
+$squareh: 10px;
+$squaremargin: 5px;
+$loaderw: $squarew * 3 + $squaremargin *2;
+$loaderh: $squareh * 3 + $squaremargin *2;
+$delayenter: 0.3s;
+$topenter: -10px;
+
+@mixin transition($value) {
+  -webkit-transition: $value ;
+   -moz-transition: $value ;
+          transition: $value ;
+}
+
+@mixin delay( $delay ) {
+  -webkit-animation-delay: $delay;
+   -moz-animation-delay: $delay;
+  animation-delay: $delay;
+}
+@-webkit-keyframes enter{
+    0%   { 
+        opacity: 0;
+        top: $topenter;
+    }
+    5%   { 
+        opacity: 1;
+        top: 0px;
+    }
+    50.9% { 
+        opacity: 1;
+        top: 0px;
+    }
+    55.9% { 
+        opacity: 0;
+        top: - $topenter;
+    }
+    100% {
+        opacity: 1;
+    }
+    
+}
+@keyframes enter{
+    0%   { 
+        opacity: 0;
+        top: $topenter;
+    }
+    5%   { 
+        opacity: 1;
+        top: 0px;
+    }
+    50.9% { 
+        opacity: 1;
+        top: 0px;
+    }
+    55.9% { 
+        opacity: 0;
+        top: - $topenter;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@-moz-keyframes enter{
+    0%   { 
+        opacity: 0;
+        top: $topenter;
+    }
+    5%   { 
+        opacity: 1;
+        top: 0px;
+    }
+    50.9% { 
+        opacity: 1;
+        top: 0px;
+    }
+    55.9% { 
+        opacity: 0;
+        top: - $topenter;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.loader{
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-left: 27px;
+    margin-top: 8px;
+}
+.square{
+    background: $white;
+    width: $squarew;
+    height: $squareh;
+    float: left;
+    top: $topenter;
+    margin-right: $squaremargin;
+    margin-top: $squaremargin;
+    position:relative;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+.square.show {
+    opacity: 1;
+    -webkit-animation: enter 6s 0s;
+    animation: enter 6s 0s;
+}
+.enter{
+    top: 0px;
+    opacity: 1;
+}
+.square:nth-child(1){
+  @include delay(6 * $delayenter);
+}
+.square:nth-child(2){
+ @include delay(7 * $delayenter);
+}
+.square:nth-child(3){
+  @include delay(8 * $delayenter);
+  background: #fdc96f;
+}
+.square:nth-child(4){
+  @include delay(3 * $delayenter);
+}
+.square:nth-child(5){
+  @include delay(4 * $delayenter);
+}
+.square:nth-child(6){
+  @include delay(5 * $delayenter);
+}
+.square:nth-child(7){
+  }
+.square:nth-child(8){
+  @include delay(1 * $delayenter);
+}
+.square:nth-child(9){
+  @include delay(2 * $delayenter);
+}
+.clear{
+  clear: both;
+ }
+.last{
+   margin-right:0;
+}
+
+// Graph 
+
+.circle {
+  overflow: hidden;
+    display: inline-block;
+}
+
+#graph {
+    position: relative;
+    z-index: 1;
+    width: 55px;
+    height: 45px;
+    margin: 0 auto;
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+}
+#graph.show {
+    opacity: 1;
+}
+#graph div {
+    position: absolute;
+    bottom: 0px;
+    width: 5px;
+    height: 10px;
+    background: #fff;
+}
+
+#graph div:nth-child(n+1) {
+    height:15px;
+    left: 0px;
+    animation: chartIt 2s 1 ease-in-out 0s;
+    -webkit-animation: chartIt 2s 1 ease-in-out 0s;
+}
+
+#graph div:nth-child(n+2) {
+    height:25px;
+    left: 10px;
+    animation: chartIt 2s 1 ease-in-out .25s;
+    -webkit-animation: chartIt 2s 1 ease-in-out .25s;
+    }
+
+#graph div:nth-child(n+3) {
+    height:30px;
+    left: 20px;
+    animation: chartIt 2s 1 ease-in-out .5s;
+    -webkit-animation: chartIt 2s 1 ease-in-out .5s;
+}
+
+#graph div:nth-child(n+4) {
+    height:28px;
+    left: 30px;
+    animation: chartIt 2s 1 ease-in-out .75s;
+    -webkit-animation: chartIt 2s 1 ease-in-out .75s;
+}
+
+#graph div:nth-child(n+5) {
+    height: 37px;
+    left: 40px;
+    animation: chartIt 2s 1 ease-in-out 1s;
+    -webkit-animation: chartIt 2s 1 ease-in-out 1s;
+}
+
+#graph div:nth-child(n+6) {
+    height:43px;
+    left: 50px;
+    animation: chartIt 2s 1 ease-in-out 1.25s;
+    -webkit-animation: chartIt 2s 1 ease-in-out 1.25s;
+}
+
+@keyframes chartIt {
+  0% { max-height:60px; }
+  50% { max-height:0px; }
+  100% { max-height:60px; }
+}
+
+@-webkit-keyframes chartIt {
+  0% { max-height:60px; }
+  50% { max-height:0px; }
+  100% { max-height:60px; }
+}
+// Ready to Talk Row
+.ready-row {
+    padding: 100px 0;
+    transition: all 0.3s ease-in-out;
+//    display: none;
+    .talk-col {
+        transition: all 0.4s ease-in-out;
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+    .talk-col.show{
+        opacity: 1;
+        transform: translateX(0px);
+    }
+    h1 {
+        font-family: $body-font;
+        text-transform: none;
+        font-weight: 700;
+        color: $blue;
+        margin-bottom: 15px;
+    }
+}
+
+// Animate Rows
+//.seen {
+//    display: block;
+//}

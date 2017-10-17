@@ -1,0 +1,31 @@
+.cf-footer {
+    background: $blue;
+    color: $white;
+    padding: 50px 0;
+    .col-md-4.col-xs-12 {
+        &:nth-child(2) {
+            p {
+                font-family: "Din Light", Arial, sans-serif;
+                font-size: 14px;
+                strong {
+                    font-family: "Din Bold", Arial, sans-serif;
+                    &:nth-child(2) {
+                        margin-left: 15px;
+                    }
+                }
+                &:last-child {
+                    strong {font-family: "Din Reg", Arial, sans-serif;}
+                }
+            }
+            &:nth-child(2) {
+                padding-left: 70px;
+                @media screen and (max-width: 768px) {
+                    padding-left: auto;
+                }
+            }
+            &:last-child {
+                text-align: center;
+            }
+        }
+    }
+}

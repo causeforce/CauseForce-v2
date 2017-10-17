@@ -1,0 +1,39 @@
+// Grid settings
+$main-sm-columns:       12;
+$sidebar-sm-columns:    4;
+
+// Colors 
+$black: #000000;
+$white: #ffffff;
+$gold: #f5c400;
+$orange: #e27c00;
+$gray: #e3e6ec;
+$blue: #003764;
+$blue-dark: #073564;
+
+// Fonts
+@font-face {
+    font-family: 'Din Reg';
+    src: url('../../assets/fonts/DINRegularAlternate.ttf');
+}
+@font-face {
+    font-family: 'Din Bold';
+    src: url('../../assets/fonts/DINBold.ttf');
+}
+@font-face {
+    font-family: 'Din Light';
+    src: url('../../assets/fonts/DINLightAlternate.ttf');
+}
+@font-face {
+    font-family: 'Font Awesome';
+    src: url('../../assets/fonts/FontAwesome/fonts/fontawesome-webfont.ttf') format("ttf"),
+        url('../../assets/fonts/FontAwesome/fonts/FontAwesome.otf') format("otf"),
+        url('../../assets/fonts/FontAwesome/fonts/fontawesome-webfont.woff') format("woff"),
+        url('../../assets/fonts/FontAwesome/fonts/fontawesome-webfont.woff2') format("woff2"),
+        url('../../assets/fonts/FontAwesome/fonts/fontawesome-webfont.eot') format("eot");
+}
+
+$body-font: 'Vesper Libre', Arial, serif;
+$b-font: 'Din Bold', Arial, sans-serif;
+$l-font: 'Din Light', Arial, sans-serif;
+$r-font: 'Din Reg', Arial, sans-serif;
