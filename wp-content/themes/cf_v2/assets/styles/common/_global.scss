@@ -29,16 +29,10 @@ main.main {
     }
 }
 
-// Buttons
-.orange-btn {
-    background: #e27c00;
-    color: #fff;
-    padding: 25px 40px 15px;
-    border-radius: 0;
-    text-transform: uppercase;
-    font-family: $r-font;
-    border: 0px;
-    cursor: pointer;
-    display: block;
-    margin: 0 auto;
+// Text Colors
+.text-orange {
+    color: $orange !important;
+}
+.text-blue {
+    color: $blue !important;
 }

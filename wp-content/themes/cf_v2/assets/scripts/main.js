@@ -15,6 +15,11 @@
     $('.bt-menu').on('click', function() {
         $('.mobile-overlay').fadeToggle();
     });
+    
+    $('.bt-menu').click(function(e) {
+        $(this).toggleClass('active');
+        return false;
+    });
 
   // Use this variable to set up the common and page specific functions. If you
   // rename this variable, you will also need to rename the namespace below.
@@ -32,10 +37,6 @@
     'home': {
       init: function() {
         // JavaScript to be fired on the home page
-          $('.bt-menu').click(function(e) {
-              $(this).toggleClass('active');
-              return false;
-          });
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS
