@@ -4,12 +4,13 @@ $sidebar-sm-columns:    4;
 
 // Colors 
 $black: #000000;
-$white: #ffffff;
-$gold: #f5c400;
-$orange: #e27c00;
-$gray: #e3e6ec;
 $blue: #003764;
 $blue-dark: #073564;
+$gold: #f5c400;
+$gray: #e3e6ec;
+$gray-light: #f0f2f5;
+$orange: #e27c00;
+$white: #ffffff;
 
 // Fonts
 @font-face {
@@ -34,6 +35,6 @@ $blue-dark: #073564;
 }
 
 $body-font: 'Vesper Libre', Arial, serif;
-$b-font: 'Din Black', Arial, sans-serif;
+$b-font: 'Din Bold', Arial, sans-serif;
 $l-font: 'Din Light', Arial, sans-serif;
 $r-font: 'Din Reg', Arial, sans-serif;

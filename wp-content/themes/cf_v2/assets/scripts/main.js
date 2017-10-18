@@ -11,15 +11,6 @@
  * ======================================================================== */
 
 (function($) {
-    
-    $('.bt-menu').on('click', function() {
-        $('.mobile-overlay').fadeToggle();
-    });
-    
-    $('.bt-menu').click(function(e) {
-        $(this).toggleClass('active');
-        return false;
-    });
 
   // Use this variable to set up the common and page specific functions. If you
   // rename this variable, you will also need to rename the namespace below.
@@ -28,6 +19,23 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
+        $('.bt-menu').on('click', function() {
+            $('.mobile-overlay').fadeToggle();
+        });
+
+        $('.bt-menu').click(function(e) {
+            $(this).toggleClass('active');
+            return false;
+        });
+        $(window).on('scroll', function() {
+            if ($(window).scrollTop() > 60) {
+                $('.menu-cont > .brand > img').attr('src', '../wp-content/uploads/2017/10/Group-236.svg');
+                $('.menu-cont .brand').addClass('fixed-nav');
+            } else {
+                $('.menu-cont > .brand > img').attr('src', '../wp-content/uploads/2017/10/Group-61.svg');
+                $('.menu-cont .brand').removeClass('fixed-nav');
+            }
+        });
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
@@ -69,7 +77,17 @@
       init: function() {
         // JavaScript to be fired on the about us page
       }
-    }
+    },
+    // Our Work Page
+    'our_work': {
+      init: function() {
+        // JavaScript to be fired on the about us page
+        $('.row-02 .text-cont').on('click', function(){
+            $(this).addClass('orange-bg');
+            $(this).parent('.col-md-3').siblings('.col-md-3').children('.text-cont').removeClass('orange-bg');
+        });
+      }
+    },
   };
 
   // The routing fires all common scripts, followed by the page specific scripts.
