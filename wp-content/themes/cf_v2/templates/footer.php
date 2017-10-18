@@ -31,5 +31,5 @@
     </div>
   </div>
   <!-- WaypointsJS -->
-  <script src="wp-content/themes/cf_v2/node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
+  <script src="/wp-content/themes/cf_v2/node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
 </footer>
