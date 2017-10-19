@@ -189,3 +189,12 @@
         text-align: center;
     }
 }
+
+// Sticky Nav Wheel
+.fixed-nav {
+    position: fixed;
+    top: 50px;
+    left: 320px;
+    width: 70px;
+    z-index: 99;
+}
