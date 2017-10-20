@@ -1,11 +1,50 @@
+// All Button styles go below
+
 .orange-btn {
-    background: #e27c00;
+    background: $orange;
     color: #fff;
     padding: 20px 40px;
     border-radius: 0;
     text-transform: uppercase;
-    font-family: $r-font;
+    font-family: $b-font;
     border: 0px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+.orange-btn-outline {
+    background: transparent;
+    color: $orange;
+    padding: 20px 40px;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-family: $b-font;
+    border: 2px solid $orange;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+.blue-btn {
+    background: $blue;
+    color: #fff;
+    padding: 20px 40px;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-family: $b-font;
+    border: 0px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+.blue-btn-outline {
+    background: transparent;
+    color: $blue;
+    padding: 20px 40px;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-family: $b-font;
+    border: 2px solid $blue;
     cursor: pointer;
     display: block;
     margin: 0 auto;
