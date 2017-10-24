@@ -7,8 +7,13 @@
     border-radius: 0;
     text-transform: uppercase;
     font-family: $b-font;
-    border: 0px;
+    border: 2px solid $orange;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        background: transparent;
+        color: $orange;
+    }
 }
 .orange-btn-outline {
     background: transparent;
@@ -19,6 +24,11 @@
     font-family: $b-font;
     border: 2px solid $orange;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        background: $orange;
+        color: $white;
+    }
 }
 
 .blue-btn {
@@ -28,8 +38,13 @@
     border-radius: 0;
     text-transform: uppercase;
     font-family: $b-font;
-    border: 0px;
+    border: 2px solid $blue;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        background: transparent;
+        color: $blue;
+    }
 }
 .blue-btn-outline {
     background: transparent;
@@ -40,4 +55,9 @@
     font-family: $b-font;
     border: 2px solid $blue;
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        background: $blue;
+        color: $white;
+    }
 }

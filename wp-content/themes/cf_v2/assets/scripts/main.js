@@ -179,8 +179,8 @@
         var ailishBio = {
             name: 'Ailish Steele',
             title: 'Director of Communications',
-            bio: 'Ailish\'s Bio',
-            linkedIn: 'https://ca.linkedin.com/in/ailish-steele-0790571a'
+            bio: 'Ailish is the Director of Communications, holding responsibility to lead Internal and External Communications for CauseForce, and its brands and clients. With responsibility to continue to develop and advance Communications strategies and tactics, Ailish’s skillset is heightened within Media Relations, Client and Partner Relations, and Proactive and Reactive Messaging, through a decade long role within the CauseForce Communications Department. Ailish’s team drives top-tier traditional and non-traditional media coverage, executes and manages social media platforms to highlight marketing campaigns and localized content, all while showcasing the stories behind the brands.' + '<br><br>'+ 'Joining CauseForce in January 2009 as Communications Intern, Ailish continued to advance her responsibility within the Canadian Communications department. In October 2012, Ailish was granted the opportunity to help build the Communications strategies for Australian and US markets, taking on global responsibility. Advancing to Director in January 2016, Ailish has molded the Communications team to thrive on a front-page news story and land blockbuster media coverage across the globe, while raising awareness of life-changing experiences and transformational dollars for facilities across the world.' +'<br><br>'+ 'Ailish currently resides in Toronto and holds a Honours Bachelor of Applied Arts in Media Studies and a Diploma in Media Communications, from the University of Guelph-Humber.',
+            linkedIn: 'https://www.linkedin.com/in/ailish-steele-0790571a'
         };
         var aboutName = '#aboutModal .about-name';
         var aboutTitle = '#aboutModal .about-title';

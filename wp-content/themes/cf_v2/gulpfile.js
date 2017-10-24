@@ -19,6 +19,8 @@ var runSequence  = require('run-sequence');
 var sass         = require('gulp-sass');
 var sourcemaps   = require('gulp-sourcemaps');
 var uglify       = require('gulp-uglify');
+var ftp          = require('vinyl-ftp');
+var gutil        = require('gulp-util');
 
 // See https://github.com/austinpray/asset-builder
 var manifest = require('asset-builder')('./assets/manifest.json');
@@ -297,3 +299,29 @@ gulp.task('wiredep', function() {
 gulp.task('default', ['clean'], function() {
   gulp.start('build');
 });
+
+// ### Deploy
+// `gulp deploy` - Deploy the dist folder 
+gulp.task( 'deploy', function () {
+ 
+    var conn = ftp.create( {
+        host:     'causeforce.com',
+        user:     'mquraishi@causeforce.com',
+        password: 'C(cR==Hs.^If',
+        parallel: 5,
+        log:      gutil.log
+    } );
+ 
+    var globs = [
+        'dist/**',
+        'dist/'
+    ];
+ 
+    // using base = '.' will transfer everything to /subdomain/koi correctly 
+    // turn off buffering in gulp.src for best performance 
+ 
+    return gulp.src( globs, { base: './dist/', buffer: false } )
+        .pipe( conn.newer( '/subdomains/staging/wp-content/themes/cf_v2/dist/' ) ) // only upload newer files 
+        .pipe( conn.dest( '/subdomains/staging/wp-content/themes/cf_v2/dist/' ) );
+ 
+} );
