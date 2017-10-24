@@ -474,32 +474,44 @@ $topenter: -10px;
 // ***                    *** //
 #solutions-wrapper {
     .signature-events-container {
-        background-color: lightblue;
+        background-color: #EBEFF3;
     }
     .discover-intro-copy {
         max-width: 700px;
         margin: 0 auto;
     }
     .discover-row {
-        padding-top: 120px;
-        padding-bottom: 100px;
+        padding-top: 100px;
+        padding-bottom: 70px;
         border-bottom: 2px solid #efefef;
+        h1 {
+            margin-bottom: 40px;
+        }
     }
     .consulting-row {
-        padding-top: 140px;
-        padding-bottom: 160px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        @media screen and (max-width: 845px) {
+            padding-bottom: 60px;
+            padding-top: 60px;
+            img {
+                margin-bottom: 25px;
+            }
+        }
     }
     .sig-events-btn{
         padding-top: 70px;
         padding-bottom: 70px;
     }
     .signature-events-row {
-        padding-top: 140px;
-        padding-bottom: 80px;
+        padding-top: 100px;
+        padding-bottom: 60px;
         h1 {
             margin-bottom: 30px;
         }
-
+        @media screen and (max-width: 845px) {
+            padding-top:60px;
+        }
     }
     .sig-intro-copy {
         max-width:720px;
@@ -508,18 +520,40 @@ $topenter: -10px;
     .sig-images-row {        
         max-width: 1140px;
         margin: 0 auto;
+        padding-bottom: 80px;
+        @media screen and (max-width:850px) {
+            padding-bottom: 60px;
+            img {
+                margin: 0 auto;
+                display: block;
+                margin-bottom: 40px;
+            }
+        }
+
     
     }
     .market-digital{
-        padding-top: 140px;
+        padding-top: 100px;
+        @media screen and (max-width: 845px) {
+            padding-top: 60px;
+            img {
+                margin-bottom: 25px;
+            }
+        }
     }
     .fund-cult, .events-exp {
-        padding-top: 180px;
+        padding-top: 120px;
+        @media screen and (max-width: 845px) {
+            padding-top: 60px;
+            img {
+                margin-bottom: 25px;
+            }
+        }
     }
     .events-exp {
-        padding-bottom: 200px;
+        padding-bottom: 160px;
     }
-    .fund-cult, .events-exp, .market-digital {
+    .fund-cult, .events-exp, .market-digital, .consulting-row {
         h2 {
             margin-bottom:30px;
         }
@@ -527,6 +561,39 @@ $topenter: -10px;
             margin-top: 15px;
         }
     }
+    .close-marketing-row {
+        width:100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        .close-marketing {
+            text-align: right;
+            display: block;
+            color: #E07C20;
+        }        
+    }
+    .marketing-learn-more, .fundraise-learn-more, .events-learn-more {
+        ul {
+            padding-left: 0;
+            li {
+                list-style-type: none;
+            }
+        }
+    }
+//    .marketing-slide-1 {
+//        transition: all .2s cubic-bezier(.69,.11,.46,.81); 
+//         -webkit-transition: all .2s cubic-bezier(.69,.11,.46,.81); 
+//         -moz-transition: all .2s cubic-bezier(.69,.11,.46,.81); 
+//     }
+    // .marketing-slide-1 {
+    //     display: none;
+    // }
+    .disp-none {
+        display: none;
+        transition: opacity 500 ease-in-out;
+    }
+
     
 }
 

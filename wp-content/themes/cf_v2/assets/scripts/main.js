@@ -88,6 +88,56 @@
         });
       }
     },
+    //solutions
+    'solutions': {
+      init: function() {
+
+
+
+      },
+      finalize: function() {
+        var listColumns = [
+          {
+            target: ".marketing-slide-1",
+            duration: 200
+          },
+          {
+            target: ".marketing-slide-2",
+            duration: 600
+          },
+          {
+            target: ".marketing-slide-3",
+            duration: 1000
+          },     
+          {
+            target: ".marketing-slide-4",
+            duration: 1400
+          },                                   
+        ];
+
+        function animateLists (target, duration) {
+          $(target)
+            .css('opacity', 0)
+            .animate(
+              { opacity: 1 },
+              { queue: false, duration: duration }
+            );          
+        }
+        $(".marketing-btn-opn").on('click', function(e){
+          e.preventDefault();
+          $('.marketing-learn-more').removeClass('disp-none');
+          animateLists(listColumns[0].target, listColumns[0].duration);
+          animateLists(listColumns[1].target, listColumns[1].duration);
+          animateLists(listColumns[2].target, listColumns[2].duration);
+          animateLists(listColumns[3].target, listColumns[3].duration);
+        });
+        $('.close-marketing').on('click', function(e){
+          e.preventDefault();
+          $('.marketing-learn-more').addClass('disp-none');
+        })
+      }
+    }
+
   };
 
   // The routing fires all common scripts, followed by the page specific scripts.
