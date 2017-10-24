@@ -6,5 +6,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="../wp-content/themes/cf_v2/assets/fonts/FontAwesome/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Vesper+Libre" rel="stylesheet">
+    <link rel="stylesheet" href="../wp-content/themes/cf_v2/assets/styles/animate/animate.min.css">
     <?php wp_head(); ?>
 </head>

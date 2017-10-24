@@ -13,3 +13,52 @@
   @extend .btn;
   @extend .btn-secondary;
 }
+
+// Quick Contact form
+.ct-form {
+    position: fixed;
+    right: 40px;
+    bottom: 25px;
+    padding: 20px;
+    background: #fff;
+    width: 300px;
+    padding: 20px;
+    box-shadow: 1px 1px 10px #dadada;
+    h4 {
+        text-align: center;
+        text-transform: none;
+        color: $blue;
+    }
+    input{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+    textarea {
+        width: 100%;
+        max-height: 150px;
+        min-height: 100px;
+        border-color: #dadada;
+    }
+    .orange-btn {
+        padding: 10px 40px;
+        width: 100%;
+    }
+    .close-icn {
+        position: absolute;
+        top: 5px;
+        right: 10px;
+        text-transform: uppercase;
+        color: #bcbcbc;
+        cursor: pointer;
+    }
+}
+.mail-icn {
+    position: fixed;
+    right: 100px;
+    bottom: 25px;
+    cursor: pointer;
+    img {
+        width: 50px;
+        box-shadow: 0px 0px 10px #dadada;
+    }
+}

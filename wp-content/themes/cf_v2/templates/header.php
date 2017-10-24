@@ -14,7 +14,7 @@
     <div class="mobile-overlay">
        <div class="container">
             <a class="brand mobile-brand" href="<?= esc_url(home_url('/')); ?>">
-                <img src="../wp-content/uploads/2017/10/Group-61.svg" alt="">
+                <img src="../wp-content/uploads/2017/10/Group-61.svg" alt="Logo">
             </a>
             <div class="burger_menu">
                 <?php
@@ -23,18 +23,18 @@
                 endif;
                 ?>
             </div>
-            <div class="row mobile-footer">
-                <div class="col-md-4">
+            <div class="row justify-content-md-center mobile-footer">
+                <div class="col-md-3">
                     <p>
                         12301 Wilshire Blvd., Suite 430,<br>
                         Los Angeles, CA 90025
                     </p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <p><strong>P</strong> 310 314 1618</p>
                     <p><strong>F</strong> 310 314 1718</p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
                     <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                     <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>

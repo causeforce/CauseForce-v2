@@ -29,6 +29,19 @@ use Roots\Sage\Wrapper;
             <?php include Wrapper\sidebar_path(); ?>
           </aside><!-- /.sidebar -->
         <?php endif; ?>
+        <div class="mail-icn">
+            <img src="/wp-content/themes/cf_v2/assets/images/mail_icn.svg" alt="Contact Icn">
+        </div>
+        <div class="ct-form">
+            <h4>Let's connect.</h4>
+            <p class="close-icn">x</p>
+            <form action="submit">
+                <input placeholder="Name" type="text">
+                <input placeholder="Email" type="email">
+                <textarea rows="3" cols="80"></textarea>
+                <button class="orange-btn">Submit</button>
+            </form>
+        </div>
       </div><!-- /.content -->
     </div><!-- /.wrap -->
     <?php
