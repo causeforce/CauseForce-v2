@@ -217,7 +217,7 @@ $topenter: -10px;
     left: 0;
     top: 0;
     margin-left: 27px;
-    margin-top: 8px;
+    margin-top: 20px;
 }
 .square{
     background: $white;
@@ -277,8 +277,9 @@ $topenter: -10px;
 // Graph 
 
 .circle {
-  overflow: hidden;
+    overflow: hidden;
     display: inline-block;
+    margin-top: 10px;
 }
 
 #graph {
@@ -776,7 +777,7 @@ $topenter: -10px;
             }
         }
         .col-12.txt-col {
-            .onewalk-txt,
+            .diabetes-txt,
             .afp-txt,
             .ccrf-txt {
                 display: none;
@@ -794,6 +795,10 @@ $topenter: -10px;
                 font-family: $l-font;
                 &:first-child {
                     font-family: $b-font;
+                    font-size: 14px;
+                }
+                &:last-child {
+                    font-size: 13px;
                 }
             }
         }
@@ -813,10 +818,7 @@ $topenter: -10px;
             margin-bottom: 50px;
             img {
                 width: 100%;
-                max-height: 400px;
             }
-        }
-        .col-md-6 {
             p {
                 font-family: $l-font;
                 color: $blue;
@@ -834,7 +836,7 @@ $topenter: -10px;
                 font-size: 18px;
             }
             &:first-child {
-                background: url(/wp-content/themes/cf_v2/assets/images/col_img.jpg);
+                background: url(/wp-content/uploads/2017/10/Ride_SubHero2.jpg);
                 background-position: center center;
                 background-size: cover;
                 min-height: 300px;
@@ -853,7 +855,7 @@ $topenter: -10px;
                 }
                 p {
                     position: absolute;
-                    top: 50%;
+                    top: 45%;
                     left: 45%;
                     transform: translate(-40%, -40%);
                     @media screen and (max-width: 768px) {
@@ -1255,14 +1257,21 @@ $topenter: -10px;
     .row {
         .col-md-4 {
             margin-bottom: 20px;
+            a {
+                &:hover {
+                    text-decoration: none;
+                }
+            }
         }
         .txt-cont {
             background: #fff;
             padding: 20px;
+            min-height: 125px;
             p {
                 font-family: $l-font;
                 &:last-child {
                     margin-bottom: 0px;
+                    font-size: 14px;
                 }
             }
             .text-orange {

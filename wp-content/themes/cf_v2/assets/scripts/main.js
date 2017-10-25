@@ -142,27 +142,27 @@
         };
         var rebelBio = {
             name: 'Rebel Neary',
-            title: 'SVP Marketing',
+            title: 'Vice President of Marketing',
             bio: 'As head of marketing for the company and its event platforms, Rebel Neary is responsible for the innovation around consumer efforts and the creation of new brands. She oversees traditional media, digital marketing, communications, technology and campaigns that help drive new customer acquisition, participant engagement, and the retention rates earned and experienced by CauseForce brands. Rebel’s team works with multiple technology vendors, sourcing partners, media buyers, and local general managers to customize marketing efforts and deliver on the P&L for each event.' + '<br/><br/>' + 'Rebel has over 17 years Marketing experience across USA, Canada and Australia. As a former political strategist at Burson Marsteller and Experiential Marketer at Tourism Australia, Rebel knows how motivate target audiences to take action. As part of the Causefore team since 2012, Rebel has lead marketing efforts across four countries and 25 event brands raising millions of dollars for our non-profit partners. Rebel is an expert in cause-related digital activations, grass-roots mobilization, integrated media strategy and leading teams to implement innovative, scalable strategies to fuel expansion.' + '<br/><br/>' + 'Rebel lives in the Hollywood Hills with her wife Michelle and two dogs. Rebel has a law degree from the University of Technology, Sydney.',
             linkedIn: 'https://www.linkedin.com/in/rebelneary'
         };
         var robbyBio = {
             name: 'Robby Facer',
-            title: 'Director of Marketing',
+            title: 'Director of Marketing and Paid Media',
             bio: 'A self-proclaimed brand marketing nerd, Robby started his career a bright-eyed college grad from Salt Lake City, ready to take on the world. That world took him first to Pittsburgh, working in the visual and creative department for American Eagle Outfitters where he first learned that brand storytelling meant truly understanding how a consumer interacts and engages with a product. He went on to work for American Eagle out of New York, eventually putting on his big boy shoes and taking a leap of faith to oversee Retail Marketing for Adidas America in Portland. Becoming fixated on ways to blend the physical and digital world for the consumer, Adidas offered Robby the chance to build stronger, more intimate and engaging relationships with consumer brand advocates across mobile, digital, grassroots and traditional marketing channels. Knowing the sun was calling his name, Robby left the rain of Portland behind, heading to Los Angeles to lead the creative evolution for brand experience at Guess? Inc.' + '<br/><br/>' + 'In 2016, Robby began a new chapter of his brand-ccentric life as a marketer, moving into the non-profit sector and currently serves as the Director of Marketing and Paid Media for CauseForce. He lives in West Hollywood with his dog Cole.',
             linkedIn: 'https://www.linkedin.com/in/robby-facer-b33a034/'
         };
         var patBio = {
             name: 'Patrick Barkhordarian',
-            title: 'Chief Financial Officer & Chief Operating Officer',
+            title: 'Vice President of Partnerships',
             bio: 'As head of Partnerships for CauseForce, Patrick is responsible for driving strategic partnerships and collaborations that inspire, motivate, and energize the next generation of donors. In this capacity, he works directly with nonprofits to identify areas of opportunity through innovation.' + '<br/><br/>' + 'Prior to this role, Patrick served on the executive team at an industry leading consulting firm specializing in cause marketing and corporate social responsibility. Developing innovative strategic alliances between blue chip brands and nonprofits to drive reach and revenue for clients and partners.' + '<br/><br/>' + 'A lifelong Los Angeles native, Patrick earned his BA from the University of California Los Angeles.',
             linkedIn: 'https://www.linkedin.com/in/pbarkhordarian/'
         };
         var joBio = {
             name: 'Joseph Hartman',
             title: 'Art Director',
-            bio: 'Jo\'s Bio.',
-            linkedIn: 'https://www.linkedin.com/in/joseph-hartman-82510125'
+            bio: 'Jo thoroughly embraces the process of communicating through creative problem solving. As Art Director at CauseForce they lead the creative team through the process of design, copy writing, and video production. Joseph works with cross-functional teams to develop new event concepts and expand existing brands through new acquisitions programs while ensuring core brand identities are adhered to. Sustaining the vigorous production level of the Creative Team through time management and motivation is one of Jo’s strengths, but the part they love the most about working as an Art Director is helping other creatives to grow, strengthen skills, and find their specialties.' + '<br><br>' + 'Currently living in Los Angeles, Joseph is an experienced arts & design professional skilled in Fine Arts influenced Layouts, Logo Design, Branding & Identity, Advertising, and Typography. While their current focus is in the graphic design industry, Jo has experience with and a strong passion for many different forms of visual arts such as painting, sculpture, printmaking, installation and animation. They are currently working with co-founder Zelda English, a photographer and curator in Oregon, in establishing the WAKE gallery in Astoria’s historic downtown area. Jo has studied at Pratt Institute, California Institute of the Arts, Rhode Island School of Design and has a BFA in Graphic Design from ArtCenter College of Design in Pasadena.',
+            linkedIn: 'https://www.linkedin.com/in/joseph-hartman-82510125/'
         };
         var julianBio = {
             name: 'Julian Brown',
@@ -172,15 +172,15 @@
         };
         var gregBio = {
             name: 'Gregory Shin',
-            title: 'Web Development Manager',
-            bio: 'Greg\'s Bio',
+            title: 'Manager of Digital Development',
+            bio: 'Greg is a veteran front-end developer turned development manager. When he\'s not leading his talented team of developers in creating innovative web solutions, or collaborating with the CauseForce designers to brainstorm unique online experiences, he can be found in his kitchen, experimenting with new recipes to add to his ever-growing repertoire.',
             linkedIn: 'https://www.linkedin.com/in/gregory-shin-73082115'
         };
         var ailishBio = {
             name: 'Ailish Steele',
             title: 'Director of Communications',
-            bio: 'Ailish\'s Bio',
-            linkedIn: 'https://ca.linkedin.com/in/ailish-steele-0790571a'
+            bio: 'Ailish is the Director of Communications, holding responsibility to lead Internal and External Communications for CauseForce, and its brands and clients. With responsibility to continue to develop and advance Communications strategies and tactics, Ailish’s skillset is heightened within Media Relations, Client and Partner Relations, and Proactive and Reactive Messaging, through a decade long role within the CauseForce Communications Department. Ailish’s team drives top-tier traditional and non-traditional media coverage, executes and manages social media platforms to highlight marketing campaigns and localized content, all while showcasing the stories behind the brands.' + '<br><br>'+ 'Joining CauseForce in January 2009 as Communications Intern, Ailish continued to advance her responsibility within the Canadian Communications department. In October 2012, Ailish was granted the opportunity to help build the Communications strategies for Australian and US markets, taking on global responsibility. Advancing to Director in January 2016, Ailish has molded the Communications team to thrive on a front-page news story and land blockbuster media coverage across the globe, while raising awareness of life-changing experiences and transformational dollars for facilities across the world.' +'<br><br>'+ 'Ailish currently resides in Toronto and holds a Honours Bachelor of Applied Arts in Media Studies and a Diploma in Media Communications, from the University of Guelph-Humber.',
+            linkedIn: 'https://www.linkedin.com/in/ailish-steele-0790571a'
         };
         var aboutName = '#aboutModal .about-name';
         var aboutTitle = '#aboutModal .about-title';

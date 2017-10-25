@@ -32,15 +32,11 @@ use Roots\Sage\Wrapper;
         <div class="mail-icn">
             <img src="/wp-content/themes/cf_v2/assets/images/mail_icn.svg" alt="Contact Icn">
         </div>
+                
         <div class="ct-form">
             <h4>Let's connect.</h4>
             <p class="close-icn">x</p>
-            <form action="submit">
-                <input placeholder="Name" type="text">
-                <input placeholder="Email" type="email">
-                <textarea rows="3" cols="80"></textarea>
-                <button class="orange-btn">Submit</button>
-            </form>
+            <?php echo do_shortcode( '[contact-form-7 id="105" title="Quick Contact"]' ); ?>
         </div>
       </div><!-- /.content -->
     </div><!-- /.wrap -->

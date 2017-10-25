@@ -24,20 +24,29 @@
     width: 300px;
     padding: 20px;
     box-shadow: 1px 1px 10px #dadada;
+    font-family: $r-font;
+    z-index: 98;
     h4 {
         text-align: center;
         text-transform: none;
         color: $blue;
+        margin-bottom: 20px;
     }
     input{
         margin-bottom: 10px;
         width: 100%;
+        background: #f9f9f9;
+        border: none;
+        padding: 10px;
     }
     textarea {
         width: 100%;
         max-height: 150px;
         min-height: 100px;
-        border-color: #dadada;
+        background: #f9f9f9;
+        border: none;
+        padding: 10px;
+        margin-bottom: 10px;
     }
     .orange-btn {
         padding: 10px 40px;
@@ -50,15 +59,54 @@
         text-transform: uppercase;
         color: #bcbcbc;
         cursor: pointer;
+        font-family: Arial, sans-serif;
+    }
+    @media screen and (max-width: 400px) {
+        display: none;
     }
 }
 .mail-icn {
     position: fixed;
-    right: 100px;
-    bottom: 25px;
+    right: 130px;
+    bottom: 30px;
     cursor: pointer;
+    background: #fff;
+    z-index: 97;
     img {
         width: 50px;
-        box-shadow: 0px 0px 10px #dadada;
+        box-shadow: 0px 1px 10px #bebebe;
     }
+    @media screen and (max-width: 400px) {
+        right: 15px;
+    }
+}
+// Hide text from NinjaFields
+.nf-form-fields-required {
+    display: none;
+}
+input.wpcf7-form-control.wpcf7-text {
+    margin-bottom: 0px !important;
+}
+.col-md-6.contact-col label {
+    width: 100%;
+    margin: 0px;
+}
+
+.form-btn-cont {
+    input {
+        @extend .orange-btn-form;
+        padding: 0px !important;
+    }
+}
+.quick-form-btn-cont {
+    input {
+        @extend .orange-btn-form;
+    }
+}
+
+div.wpcf7-mail-sent-ok {
+    border-color: $orange;
+}
+div.wpcf7-validation-errors {
+    border-color: $red;
 }
