@@ -420,34 +420,114 @@ $topenter: -10px;
 // ***                    *** //
 // **** solutions homepage **** //
 // ***                    *** //
+.animated {
+  animation-duration: .4s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 25%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(20%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInRight {
+  animation-name: fadeInRight;
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-20%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInLeft {
+  animation-name: fadeInLeft;
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+  animation-name: fadeOut;
+}
+.li-indented {
+    list-style-type: none;
+}
 #solutions-wrapper {
     .signature-events-container {
-        background-color: lightblue;
+        background-color: #EBEFF3;
     }
     .discover-intro-copy {
         max-width: 700px;
         margin: 0 auto;
+        color: #073564;
     }
     .discover-row {
-        padding-top: 120px;
-        padding-bottom: 100px;
+        padding-top: 100px;
+        padding-bottom: 70px;
         border-bottom: 2px solid #efefef;
+        h1 {
+            margin-bottom: 40px;
+        }
     }
     .consulting-row {
-        padding-top: 140px;
-        padding-bottom: 160px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        @media screen and (max-width: 845px) {
+            padding-bottom: 60px;
+            padding-top: 60px;
+            img {
+                margin-bottom: 25px;
+            }
+        }
     }
     .sig-events-btn{
         padding-top: 70px;
         padding-bottom: 70px;
     }
     .signature-events-row {
-        padding-top: 140px;
-        padding-bottom: 80px;
+        padding-top: 100px;
+        padding-bottom: 60px;
         h1 {
             margin-bottom: 30px;
         }
-
+        @media screen and (max-width: 845px) {
+            padding-top:60px;
+        }
     }
     .sig-intro-copy {
         max-width:720px;
@@ -456,18 +536,40 @@ $topenter: -10px;
     .sig-images-row {        
         max-width: 1140px;
         margin: 0 auto;
+        padding-bottom: 80px;
+        @media screen and (max-width:850px) {
+            padding-bottom: 60px;
+            img {
+                margin: 0 auto;
+                display: block;
+                margin-bottom: 40px;
+            }
+        }
+
     
     }
     .market-digital{
-        padding-top: 140px;
+        padding-top: 100px;
+        @media screen and (max-width: 845px) {
+            padding-top: 60px;
+            img {
+                margin-bottom: 25px;
+            }
+        }
     }
     .fund-cult, .events-exp {
-        padding-top: 180px;
+        padding-top: 120px;
+        @media screen and (max-width: 845px) {
+            padding-top: 60px;
+            img {
+                margin-bottom: 25px;
+            }
+        }
     }
     .events-exp {
-        padding-bottom: 200px;
+        padding-bottom: 80px;
     }
-    .fund-cult, .events-exp, .market-digital {
+    .fund-cult, .events-exp, .market-digital, .consulting-row {
         h2 {
             margin-bottom:30px;
         }
@@ -475,6 +577,71 @@ $topenter: -10px;
             margin-top: 15px;
         }
     }
+    .close-marketing-row {
+        width:100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        .close-marketing {
+            text-align: right;
+            display: block;
+            color: #E07C20;
+        }        
+    }
+    .marketing-learn-more, .fundraise-learn-more, .events-learn-more {
+        ul {
+            padding-left: 20px;
+            li {
+            }
+        }
+    }
+
+    .disp-none {
+        display: none;
+        animation-duration: .4s;
+        animation-fill-mode: both;       
+        
+    }
+    .marketing-slide-2, .marketing-slide-3, .marketing-slide-4, .marketing-slide-1, .consult-img-col, .consult-text-col {
+        opacity: 0;
+    }
+
+    // .marketing-slide-1 {
+    //     opacity: 0;
+    //     transform: translateY(200px);
+    //     -webkit-transition: all 0.2s ease-in;
+    //     -moz-transition: all 0.2s ease-in;
+    //     -o-transition: all 0.2s ease-in;
+    //     transition: all 0.2s ease-in;
+    // }
+    // .slide-anim-up {
+    //     opacity:1;
+    //     transform: translateY(0);
+    //     -webkit-transition: all 0.2s ease-in;
+    //     -moz-transition: all 0.2s ease-in;
+    //     -o-transition: all 0.2s ease-in;
+    //     transition: all 0.2s ease-in;
+    // }
+    .btn-orng-outline {
+        background: #fff;
+        color: #e27c00;
+        padding: 15px 40px;
+        border-radius: 0;
+        text-transform: uppercase;
+        font-family: Din Bold,Arial,sans-serif;
+        border: 2px solid #e27c00;
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+        display: inline-block;
+        margin-top:15px;
+        &:hover, &:focus, &:active {
+            color: #fff;
+            background: #e27c00;
+            text-decoration:none;
+        }
+    }
+
     
 }
 

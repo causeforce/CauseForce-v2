@@ -255,7 +255,49 @@
             }
         });
       }
+    },
+    //solutions
+    'solutions': {
+      init: function() {
+
+
+
+      },
+      finalize: function() {
+
+        $(".marketing-btn-opn").on('click', function(e){
+          e.preventDefault();
+          $('.marketing-learn-more').removeClass('disp-none animated fadeOut');
+          $('.marketing-slide-1').addClass('animated fadeInUp');
+          $('.marketing-slide-2').delay(200).queue(function(){
+            $(this).addClass('animated fadeInUp').clearQueue();
+          });
+          $('.marketing-slide-3').delay(400).queue(function(){
+            $(this).addClass('animated fadeInUp').clearQueue();
+          });
+          $('.marketing-slide-4').delay(600).queue(function(){
+            $(this).addClass('animated fadeInUp').clearQueue();
+          });                    
+          
+        });
+        $('.close-marketing').on('click', function(e){
+          e.preventDefault();
+          $('.marketing-learn-more').addClass('disp-none animated fadeOut');
+          $('.marketing-slide-1,.marketing-slide-2,.marketing-slide-3,.marketing-slide-4').removeClass('animated fadeInUp');
+        });
+
+        $('.consulting-row').waypoint(function(){
+            $('.consult-img-col').addClass('animated fadeInRight');
+            $('.consult-text-col').addClass('animated fadeInRight');
+          },
+          { 
+            offset: '85%'
+          });        
+
+        
+      }
     }
+
   };
 
   // The routing fires all common scripts, followed by the page specific scripts.
