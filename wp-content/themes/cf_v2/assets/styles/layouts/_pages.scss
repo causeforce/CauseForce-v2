@@ -419,6 +419,73 @@ $topenter: -10px;
 // ***                    *** //
 // **** solutions homepage **** //
 // ***                    *** //
+.animated {
+  animation-duration: .4s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 25%, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInUp {
+  animation-name: fadeInUp;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translate3d(20%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInRight {
+  animation-name: fadeInRight;
+}
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translate3d(-20%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.fadeInLeft {
+  animation-name: fadeInLeft;
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.fadeOut {
+  animation-name: fadeOut;
+}
+.li-indented {
+    list-style-type: none;
+}
 #solutions-wrapper {
     .signature-events-container {
         background-color: #EBEFF3;
@@ -426,6 +493,7 @@ $topenter: -10px;
     .discover-intro-copy {
         max-width: 700px;
         margin: 0 auto;
+        color: #073564;
     }
     .discover-row {
         padding-top: 100px;
@@ -498,7 +566,7 @@ $topenter: -10px;
         }
     }
     .events-exp {
-        padding-bottom: 160px;
+        padding-bottom: 80px;
     }
     .fund-cult, .events-exp, .market-digital, .consulting-row {
         h2 {
@@ -522,23 +590,55 @@ $topenter: -10px;
     }
     .marketing-learn-more, .fundraise-learn-more, .events-learn-more {
         ul {
-            padding-left: 0;
+            padding-left: 20px;
             li {
-                list-style-type: none;
             }
         }
     }
-//    .marketing-slide-1 {
-//        transition: all .2s cubic-bezier(.69,.11,.46,.81); 
-//         -webkit-transition: all .2s cubic-bezier(.69,.11,.46,.81); 
-//         -moz-transition: all .2s cubic-bezier(.69,.11,.46,.81); 
-//     }
-    // .marketing-slide-1 {
-    //     display: none;
-    // }
+
     .disp-none {
         display: none;
-        transition: opacity 500 ease-in-out;
+        animation-duration: .4s;
+        animation-fill-mode: both;       
+        
+    }
+    .marketing-slide-2, .marketing-slide-3, .marketing-slide-4, .marketing-slide-1, .consult-img-col, .consult-text-col {
+        opacity: 0;
+    }
+
+    // .marketing-slide-1 {
+    //     opacity: 0;
+    //     transform: translateY(200px);
+    //     -webkit-transition: all 0.2s ease-in;
+    //     -moz-transition: all 0.2s ease-in;
+    //     -o-transition: all 0.2s ease-in;
+    //     transition: all 0.2s ease-in;
+    // }
+    // .slide-anim-up {
+    //     opacity:1;
+    //     transform: translateY(0);
+    //     -webkit-transition: all 0.2s ease-in;
+    //     -moz-transition: all 0.2s ease-in;
+    //     -o-transition: all 0.2s ease-in;
+    //     transition: all 0.2s ease-in;
+    // }
+    .btn-orng-outline {
+        background: #fff;
+        color: #e27c00;
+        padding: 15px 40px;
+        border-radius: 0;
+        text-transform: uppercase;
+        font-family: Din Bold,Arial,sans-serif;
+        border: 2px solid #e27c00;
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+        display: inline-block;
+        margin-top:15px;
+        &:hover, &:focus, &:active {
+            color: #fff;
+            background: #e27c00;
+            text-decoration:none;
+        }
     }
 
     
