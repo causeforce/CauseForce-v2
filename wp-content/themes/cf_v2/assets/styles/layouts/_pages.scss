@@ -566,7 +566,7 @@ $topenter: -10px;
         }
     }
     .events-exp {
-        padding-bottom: 80px;
+        padding-bottom: 20px;
     }
     .fund-cult, .events-exp, .market-digital, .consulting-row {
         h2 {
@@ -576,13 +576,13 @@ $topenter: -10px;
             margin-top: 15px;
         }
     }
-    .close-marketing-row {
+    .close-marketing-row, .close-fundraise-row, .close-events-row{
         width:100%;
         padding-right: 15px;
         padding-left: 15px;
         padding-top: 40px;
         padding-bottom: 40px;
-        .close-marketing {
+        .close-marketing, .close-fundraise, .close-events {
             text-align: right;
             display: block;
             color: #E07C20;
@@ -602,7 +602,7 @@ $topenter: -10px;
         animation-fill-mode: both;       
         
     }
-    .marketing-slide-2, .marketing-slide-3, .marketing-slide-4, .marketing-slide-1, .consult-img-col, .consult-text-col {
+    .marketing-slide-2, .marketing-slide-3, .marketing-slide-4, .marketing-slide-1, .consult-img-col, .consult-text-col, .fundraise-slide-2, .fundraise-slide-3, .fundraise-slide-4, .fundraise-slide-1, .events-slide-2, .events-slide-3, .events-slide-4, .events-slide-1,{
         opacity: 0;
     }
 

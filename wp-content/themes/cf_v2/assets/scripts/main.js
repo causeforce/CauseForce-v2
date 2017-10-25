@@ -265,34 +265,66 @@
       },
       finalize: function() {
 
+        // delayed animated columns
+        function animateColumns(className) {
+          $(''+className+'-learn-more').removeClass('disp-none animated fadeOut');
+          $(''+className+'-slide-1').addClass('animated fadeInUp');
+          $(''+className+'-slide-2').delay(200).queue(function(){
+            $(this).addClass('animated fadeInUp').clearQueue();
+          });
+          $(''+className+'-slide-3').delay(400).queue(function(){
+            $(this).addClass('animated fadeInUp').clearQueue();
+          });
+          $(''+className+'-slide-4').delay(600).queue(function(){
+            $(this).addClass('animated fadeInUp').clearQueue();
+          });                     
+        }
+
+        function closeAnimatedColumns(className) {
+          $(''+className+'-learn-more').addClass('disp-none animated fadeOut');
+          $(''+className+'-slide-1,'+className+'-slide-2,'+className+'-slide-3,'+className+'-slide-4').removeClass('animated fadeInUp');
+        }
+
+        // marketing row
         $(".marketing-btn-opn").on('click', function(e){
           e.preventDefault();
-          $('.marketing-learn-more').removeClass('disp-none animated fadeOut');
-          $('.marketing-slide-1').addClass('animated fadeInUp');
-          $('.marketing-slide-2').delay(200).queue(function(){
-            $(this).addClass('animated fadeInUp').clearQueue();
-          });
-          $('.marketing-slide-3').delay(400).queue(function(){
-            $(this).addClass('animated fadeInUp').clearQueue();
-          });
-          $('.marketing-slide-4').delay(600).queue(function(){
-            $(this).addClass('animated fadeInUp').clearQueue();
-          });                    
-          
-        });
-        $('.close-marketing').on('click', function(e){
-          e.preventDefault();
-          $('.marketing-learn-more').addClass('disp-none animated fadeOut');
-          $('.marketing-slide-1,.marketing-slide-2,.marketing-slide-3,.marketing-slide-4').removeClass('animated fadeInUp');
+          animateColumns(".marketing");
         });
 
+       $('.close-marketing').on('click', function(e){
+          e.preventDefault();
+          closeAnimatedColumns(".marketing");
+        });
+
+        // fundraising row
+        $(".fundraise-btn-opn").on('click', function(e){
+          e.preventDefault();
+          animateColumns(".fundraise");
+        });
+
+       $('.close-fundraise').on('click', function(e){
+          e.preventDefault();
+          closeAnimatedColumns(".fundraise");
+        });  
+
+        // events row
+        $(".events-btn-opn").on('click', function(e){
+          e.preventDefault();
+          animateColumns(".events");
+        });
+
+       $('.close-events').on('click', function(e){
+          e.preventDefault();
+          closeAnimatedColumns(".events");
+        });                          
+ 
         $('.consulting-row').waypoint(function(){
             $('.consult-img-col').addClass('animated fadeInRight');
             $('.consult-text-col').addClass('animated fadeInRight');
-          },
-          { 
+            },
+            { 
             offset: '85%'
-          });        
+            });        
 
         
       }
