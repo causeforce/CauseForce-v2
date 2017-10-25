@@ -497,8 +497,8 @@ $topenter: -10px;
         color: #073564;
     }
     .discover-row {
-        padding-top: 100px;
-        padding-bottom: 70px;
+        padding-top: 60px;
+        padding-bottom: 60px;
         border-bottom: 2px solid #efefef;
         h1 {
             margin-bottom: 40px;
@@ -549,7 +549,7 @@ $topenter: -10px;
     
     }
     .market-digital{
-        padding-top: 100px;
+        padding-top: 60px;
         @media screen and (max-width: 845px) {
             padding-top: 60px;
             img {
@@ -558,7 +558,7 @@ $topenter: -10px;
         }
     }
     .fund-cult, .events-exp {
-        padding-top: 120px;
+        padding-top: 80px;
         @media screen and (max-width: 845px) {
             padding-top: 60px;
             img {
@@ -581,8 +581,8 @@ $topenter: -10px;
         width:100%;
         padding-right: 15px;
         padding-left: 15px;
-        padding-top: 40px;
-        padding-bottom: 40px;
+        padding-top: 25px;
+        padding-bottom: 25px;
         .close-marketing, .close-fundraise, .close-events {
             text-align: right;
             display: block;
