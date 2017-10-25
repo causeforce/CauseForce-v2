@@ -31,6 +31,17 @@
     }
 }
 
+.orange-btn-form {
+    @extend .orange-btn;
+    width: 100% !important;
+    background: $orange !important;
+    border: 2px solid $orange !important;
+    &:hover {
+        background: transparent !important;
+        color: $orange;
+    }
+}
+
 .blue-btn {
     background: $blue;
     color: #fff;

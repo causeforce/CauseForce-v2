@@ -36,7 +36,7 @@ use Roots\Sage\Wrapper;
         <div class="ct-form">
             <h4>Let's connect.</h4>
             <p class="close-icn">x</p>
-            <?php Ninja_Forms()->display(1); ?>
+            <?php echo do_shortcode( '[contact-form-7 id="105" title="Quick Contact"]' ); ?>
         </div>
       </div><!-- /.content -->
     </div><!-- /.wrap -->

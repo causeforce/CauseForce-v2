@@ -1,5 +1,5 @@
 <header class="banner">
-  <div class="container menu-cont">
+  <div class="container-fluid menu-cont">
 <!--    <a class="brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>-->
     <a class="brand" href="<?= esc_url(home_url('/')); ?>">
         <img src="../wp-content/uploads/2017/10/Group-61.svg" alt="">
