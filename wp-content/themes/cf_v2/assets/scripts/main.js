@@ -58,6 +58,11 @@
         // JavaScript to be fired on the home page
         $(".gray-row").waypoint(function(){
 //            $('.gray-row').fadeToggle();
+            var my_livicon = jQuery('.livicon-evo.livicon-evo-holder');
+            my_livicon.playLiviconEvo({
+                duration: 'default',
+                repeat: '3'
+            });
             $('.square').addClass('show');
             $('#graph').addClass('show');
             }, { 
