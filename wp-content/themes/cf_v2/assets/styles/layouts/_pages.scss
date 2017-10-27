@@ -557,8 +557,7 @@ $topenter: -10px;
         }
     }
     .sig-events-btn{
-        padding-top: 70px;
-        padding-bottom: 70px;
+        padding-bottom: 50px;
     }
     .signature-events-row {
         padding-top: 100px;
@@ -577,7 +576,7 @@ $topenter: -10px;
     .sig-images-row {        
         max-width: 1140px;
         margin: 0 auto;
-        padding-bottom: 80px;
+        padding-bottom: 60px;
         @media screen and (max-width:850px) {
             padding-bottom: 60px;
             img {
@@ -682,6 +681,24 @@ $topenter: -10px;
             text-decoration:none;
         }
     }
+    .btn-blu-outline {
+        background: transparent;
+        color: #073564;
+        padding: 15px 40px;
+        border-radius: 0;
+        text-transform: uppercase;
+        font-family: Din Bold,Arial,sans-serif;
+        border: 2px solid #073564;
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+        display: inline-block;
+        margin-top:15px;
+        &:hover, &:focus, &:active {
+            color: #fff;
+            background: #073564;
+            text-decoration:none;
+        }
+    }    
 
     
 }
