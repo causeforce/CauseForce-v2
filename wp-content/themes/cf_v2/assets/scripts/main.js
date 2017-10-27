@@ -97,7 +97,7 @@
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS
 
-        var figure = $(".jquery-background-video").hover( hoverVideo, hideVideo );
+        var figure = $(".jquery-background-video-wrapper").hover( hoverVideo, hideVideo );
 
         function hoverVideo(e) {  
             $('video', this).get(0).play(); 
