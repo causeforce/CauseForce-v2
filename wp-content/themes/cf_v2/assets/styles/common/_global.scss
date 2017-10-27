@@ -45,3 +45,9 @@ main.main {
 .text-blue {
     color: $blue !important;
 }
+.wrap {
+    margin-top: -145px;
+    @media screen and (max-width: 768px) {
+        margin-top: auto;
+    }
+}

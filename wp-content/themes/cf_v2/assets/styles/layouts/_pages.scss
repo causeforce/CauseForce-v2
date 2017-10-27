@@ -3,21 +3,41 @@
 // ***                    *** //
 
 .home-hero {
-    height: 100vh;
+    height: 104vh;
     .row {
         height: 100%;
+        @media screen and (max-width: 768px) {
+            height: auto;
+        }
         .text-col {
             position: relative;
+            background: $blue;
             h1 {
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%,-50%);
                 font-size: 2vw;
+                font-family: $body-font;
+                color: $white;
+                width: 75%;
+                font-size: 30px;
+                text-transform: none;
             }
         }
-        .marketing-col {
-            
+        .marketing-col,
+        .fund-col,
+        .events-col{
+            h1 {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                font-size: 30px;
+            }
+        }
+        .col-md-3 {
+            min-height: 250px;
         }
     }
 }
