@@ -34,6 +34,28 @@
                 left: 50%;
                 transform: translate(-50%,-50%);
                 font-size: 30px;
+                z-index: 99;
+                @media screen and (max-width: 768px) {
+                    text-align: center;
+                    width: 75%;
+                }
+            }
+            .video-hero {
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                overflow: hidden;
+                .video-overlay {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        background: $blue;
+                        opacity: .3;
+                }
             }
         }
         .col-md-3 {
