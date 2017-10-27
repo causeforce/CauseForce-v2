@@ -67,12 +67,7 @@
       init: function() {
         // JavaScript to be fired on the home page
         $(".gray-row").waypoint(function(){
-//            $('.gray-row').fadeToggle();
-            var my_livicon = jQuery('.livicon-evo.livicon-evo-holder');
-            my_livicon.playLiviconEvo({
-                duration: 'default',
-                repeat: '3'
-            });
+        // $('.gray-row').fadeToggle();
             $('.square').addClass('show');
             $('#graph').addClass('show');
             }, { 
@@ -343,7 +338,27 @@
 
         
       }
+    },
+    'newhome': {
+        init: function() {
+
+
+
+      },
+      finalize: function() {        
+        var figure = $(".video").hover( hoverVideo, hideVideo );
+
+        function hoverVideo(e) {  
+            $('video', this).get(0).play(); 
+        }
+
+        function hideVideo(e) {
+            $('video', this).get(0).pause(); 
+        }
+
+      }
     }
+
 
   };
 

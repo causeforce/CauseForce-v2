@@ -1300,3 +1300,38 @@ $topenter: -10px;
         }
     }
 }
+// ***                    *** //
+// **** newHome homepage **** //
+// ***                    *** //
+
+#home-splash {
+    background-color: #073564;
+    height: 100vh;
+    .main-row {
+        height: 100vh;        
+        .intro-col {
+            top: -90px;            
+        }
+        .intro-col-header {
+            h1 {
+                color: #fff;
+            }            
+        }
+
+    }
+
+    #videosList {
+    width: calc(100% + 1px);
+    overflow: hidden;
+    }
+
+    .video {
+    // background-image: url('https://img.youtube.com/vi/nZcejtAwxz4/maxresdefault.jpg');
+
+    }
+
+    /* Hide Play button + controls on iOS */
+    video::-webkit-media-controls {
+        display:none !important;
+    }    
+}
