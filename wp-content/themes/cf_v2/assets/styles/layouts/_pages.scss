@@ -1,6 +1,27 @@
 // ***                    *** //
 // **** Homepage Styling **** //
 // ***                    *** //
+
+.home-hero {
+    height: 100vh;
+    .row {
+        height: 100%;
+        .text-col {
+            position: relative;
+            h1 {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                font-size: 2vw;
+            }
+        }
+        .marketing-col {
+            
+        }
+    }
+}
+
 .col-pic-row {
     margin-top: 70px;
     padding: 70px 0;
@@ -771,9 +792,6 @@ $topenter: -10px;
             }
             p {
                 font-family: $l-font;
-                &:first-child {
-                    margin-bottom: 50px;
-                }
             }
         }
         .col-12.txt-col {
@@ -793,6 +811,7 @@ $topenter: -10px;
             p {
                 margin-bottom: 0px;
                 font-family: $l-font;
+                color: $white;
                 &:first-child {
                     font-family: $b-font;
                     font-size: 14px;

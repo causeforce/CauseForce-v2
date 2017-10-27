@@ -11,10 +11,16 @@
     margin-left: 20px;
     img {
         position: relative;
-        max-width: 350px;
+        max-width: 250px;
+        &:nth-child(2) {
+            max-width: 70px;
+        }
         @media screen and (max-width: 768px) {
-            padding: 0 20px;
-            max-width: 80%;
+            max-width: 58%;
+            &:nth-child(2) {
+                max-width: 15%;
+                margin-left: 5px;
+            }
         }
     }
 }
@@ -22,6 +28,7 @@
 // Banner Positioning
 .banner {
     position: relative;
+    z-index: 119;
 }
 
 // Mobile Menu Overlay
@@ -43,6 +50,7 @@
             width: 90% !important;
             left: auto !important;
             top: auto !important;
+            padding-right: 50px;
         }
         @media screen and (max-width: 768px) {
             top: 20px;
@@ -214,12 +222,15 @@
             max-width: 80px;
             left: 0;
             top: 0;
-            &:hover {
-                animation: test 1s linear infinite;
-            }
             @media screen and (max-width: 768px) {
                 left: 0;
                 top: 0;
+                max-width: 50px;
+            }
+        }
+        .cf-infi {
+            &:hover {
+                animation: test 1s linear infinite;
             }
         }
     }

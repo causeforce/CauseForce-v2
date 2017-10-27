@@ -39,12 +39,22 @@
         var windowSize = $(window).width();
           
         $(window).on('scroll', function() {
+            
             if ($(window).scrollTop() > 70) {
                 $('header.banner').addClass('fixed-nav');
-                $('.fixed-nav > .menu-cont > .brand > img').attr('src', '../wp-content/uploads/2017/10/Group-236.svg');
+                $('.menu-cont > .brand > img:eq(0)').css({
+                    opacity: 0,
+                    display: 'none'
+                });
             } else {
                 $('header.banner').removeClass('fixed-nav');
-                $('.menu-cont > .brand > img').attr('src', '../wp-content/uploads/2017/10/Group-61.svg');
+                $('.menu-cont > .brand > img:eq(0)').css({
+                    display: 'inline-block'
+                });
+                $('.menu-cont > .brand > img:eq(0)').animate({
+                    left: '0px',
+                    opacity: 1
+                });
             } 
         });
       },
@@ -101,17 +111,17 @@
             $(this).children('.text-cont').addClass('orange-bg');
             $(this).siblings('.col-md-3').children('.text-cont').removeClass('orange-bg');
             if ($(this).hasClass('db-col')) {
-                $(this).siblings('.col-12.txt-col').children('p.diabetes-txt').fadeIn();
-                $(this).siblings('.col-12.txt-col').children().not('p.diabetes-txt').fadeOut();
+                $(this).siblings('.col-12.txt-col').children('p.diabetes-txt').slideDown();
+                $(this).siblings('.col-12.txt-col').children().not('p.diabetes-txt').slideUp();
             } else if ($(this).hasClass('afp-col')) {
-                $(this).siblings('.col-12.txt-col').children('p.afp-txt').fadeIn();
-                $(this).siblings('.col-12.txt-col').children().not('p.afp-txt').fadeOut();
+                $(this).siblings('.col-12.txt-col').children('p.afp-txt').slideDown();
+                $(this).siblings('.col-12.txt-col').children().not('p.afp-txt').slideUp();
             } else if ($(this).hasClass('ccrf-col')) {
-                $(this).siblings('.col-12.txt-col').children('p.ccrf-txt').fadeIn();
-                $(this).siblings('.col-12.txt-col').children().not('p.ccrf-txt').fadeOut();
+                $(this).siblings('.col-12.txt-col').children('p.ccrf-txt').slideDown();
+                $(this).siblings('.col-12.txt-col').children().not('p.ccrf-txt').slideUp();
             } else if ($(this).hasClass('ow-col')) {
-                $(this).siblings('.col-12.txt-col').children('p.onewalk-txt').fadeIn();
-                $(this).siblings('.col-12.txt-col').children().not('p.onewalk-txt').fadeOut();
+                $(this).siblings('.col-12.txt-col').children('p.onewalk-txt').slideDown();
+                $(this).siblings('.col-12.txt-col').children().not('p.onewalk-txt').slideUp();
             }
         });
       }

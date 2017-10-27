@@ -2,7 +2,8 @@
   <div class="container-fluid menu-cont">
 <!--    <a class="brand" href="<?= esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>-->
     <a class="brand" href="<?= esc_url(home_url('/')); ?>">
-        <img src="../wp-content/uploads/2017/10/Group-61.svg" alt="">
+        <img src="../wp-content/uploads/2017/10/logo_01.svg" alt="Causeforce LLC">
+        <img class="cf-infi" src="../wp-content/uploads/2017/10/Group-236.svg" alt="Logo">
     </a>
     <nav class="cf-nav">
         <div class="block">
