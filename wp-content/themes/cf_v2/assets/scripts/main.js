@@ -100,11 +100,11 @@
         var figure = $(".jquery-background-video-wrapper").hover( hoverVideo, hideVideo );
 
         function hoverVideo(e) {  
-            $('video', this).get(0).play(); 
+            $('video, h1', this).get(0).play(); 
         }
 
         function hideVideo(e) {
-            $('video', this).get(0).pause(); 
+            $('video, h1', this).get(0).pause(); 
         }        
       }
     },

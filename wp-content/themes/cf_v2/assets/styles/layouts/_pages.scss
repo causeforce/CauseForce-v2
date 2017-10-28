@@ -35,6 +35,7 @@
                 transform: translate(-50%,-50%);
                 font-size: 30px;
                 z-index: 99;
+                color:#fff;
                 @media screen and (max-width: 768px) {
                     text-align: center;
                     width: 75%;
@@ -62,6 +63,11 @@
             min-height: 250px;
         }
     }
+    .vid-1, .vid-2, .vid-3 {
+        background-image: url('http://localhost/wp-content/uploads/2017/10/interactive-562x394.jpg');
+        background-position: 50%;
+        background-size: cover;
+    }
     @media screen and (max-width:995px) {
         height: auto;
         .text-col {
@@ -70,8 +76,15 @@
         .marketing-col, .fund-col, .events-col {
             min-height: 40vh;
         }
+        .jquery-background-video {
+            display: none;
+        }
         
     }
+    /* Hide Play button + controls on iOS */
+    video::-webkit-media-controls {
+        display:none !important;
+    }       
 }
 
 .col-pic-row {
