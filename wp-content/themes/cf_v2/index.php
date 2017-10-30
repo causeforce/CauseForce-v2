@@ -12,11 +12,11 @@ $args = array( 'numberposts' => 1 );
 $lastposts = get_posts( $args );
 
 foreach($lastposts as $post) : setup_postdata($post); ?>
-	
+<div id="press-hero" class="container-fluid">
+    <div class="press-bg"></div>
+</div>	
 <div id="press" class="container">
-    <div class="press-hero">
-        <img class="img-fluid" src="/wp-content/uploads/2017/10/Press.jpg" alt="Press Hero">
-    </div>
+
     <div class="row row-01">
         <div class="col-md-6">
             <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>

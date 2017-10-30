@@ -13,12 +13,12 @@
         position: relative;
         max-width: 250px;
         &:nth-child(2) {
-            max-width: 70px;
+            max-width: 60px;
         }
         @media screen and (max-width: 768px) {
-            max-width: 58%;
+            max-width: 53%;
             &:nth-child(2) {
-                max-width: 15%;
+                max-width: 11%;
                 margin-left: 5px;
             }
         }
