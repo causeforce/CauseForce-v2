@@ -17,8 +17,11 @@
         }
         @media screen and (max-width: 768px) {
             max-width: 53%;
+            &:first-child {
+                display: none !important;
+            }
             &:nth-child(2) {
-                max-width: 11%;
+                width: 50px;
                 margin-left: 5px;
             }
         }
@@ -46,11 +49,15 @@
         top: 60px;
         left: 0;
         img {
-            max-width: 350px !important;
-            width: 90% !important;
-            left: auto !important;
-            top: auto !important;
-            padding-right: 50px;
+            &:first-child {
+                width: 100% !important;
+                max-width: 350px !important;
+            }
+            &:nth-child(2) {
+                max-width: none;
+                width: 50px;
+                margin-left: 10px;
+            }
         }
         @media screen and (max-width: 768px) {
             top: 20px;
@@ -100,6 +107,9 @@
             &:hover {
                 color: $gold;
                 text-decoration: none;
+            }
+            @media screen and (max-width: 400px) {
+                font-size: 11vw;
             }
         }
     }
@@ -203,6 +213,7 @@
     @media screen and (max-width: 768px) {
         padding: 0px;
         text-align: center;
+        padding-bottom: 20px;
     }
 }
 

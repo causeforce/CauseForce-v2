@@ -34,7 +34,7 @@
                 left: 50%;
                 transform: translate(-50%,-50%);
                 font-size: 30px;
-                z-index: 99;
+                z-index: 80;
                 color:#fff;
                 @media screen and (max-width: 768px) {
                     text-align: center;
@@ -61,6 +61,22 @@
         }
         .col-md-3 {
             min-height: 250px;
+        }
+        .col-lg-3 {
+            video.jquery-background-video {
+                height: 100%;
+                width: auto;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                top: 0;
+                @media screen and (min-width: 1369px) {
+                    width: 100%;
+                    min-width: 480px;
+                    height: auto;
+                }
+            }
         }
     }
     .vid-1, .vid-2, .vid-3 {
@@ -190,6 +206,12 @@ span.fa.fa-angle-right {
                     }
                     .circle {
                         display: block;
+                    }
+                }
+                span.livicon-evo.livicon-evo-holder {
+                    @media screen and (max-width: 768px) {
+                        display: block;
+                        margin: 0 auto;
                     }
                 }
             }

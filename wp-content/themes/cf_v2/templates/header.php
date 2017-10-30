@@ -15,7 +15,8 @@
     <div class="mobile-overlay">
        <div class="container">
             <a class="brand mobile-brand" href="<?= esc_url(home_url('/')); ?>">
-                <img src="../wp-content/uploads/2017/10/Group-61.svg" alt="Logo">
+                <img src="../wp-content/uploads/2017/10/logo_01.svg" alt="Causeforce LLC">
+                <img class="cf-infi" src="../wp-content/uploads/2017/10/Group-236.svg" alt="Logo">
             </a>
             <div class="burger_menu">
                 <?php

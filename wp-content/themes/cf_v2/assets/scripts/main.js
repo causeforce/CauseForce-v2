@@ -97,15 +97,15 @@
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS
 
-        var figure = $(".jquery-background-video-wrapper").hover( hoverVideo, hideVideo );
-
         function hoverVideo(e) {  
             $('video, h1', this).get(0).play(); 
         }
 
         function hideVideo(e) {
             $('video, h1', this).get(0).pause(); 
-        }        
+        }
+          
+        var figure = $(".jquery-background-video-wrapper").hover( hoverVideo, hideVideo );
       }
     },
     // Our Work Page
@@ -205,7 +205,7 @@
         var aboutName = '#aboutModal .about-name';
         var aboutTitle = '#aboutModal .about-title';
         var aboutBio = '#aboutModal .about-bio';
-        $('#about .row-04 .col-md-3').on('click', function(){
+        $('#about .row-03 .col-md-3').on('click', function(){
             if ($(this).children('a').text() === 'Alex Baxter') {
                 $(aboutName).html(alexBio.name);
                 $(aboutTitle).html(alexBio.title);
