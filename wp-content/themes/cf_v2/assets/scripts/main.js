@@ -96,6 +96,16 @@
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS
+
+        var figure = $(".jquery-background-video-wrapper").hover( hoverVideo, hideVideo );
+
+        function hoverVideo(e) {  
+            $('video, h1', this).get(0).play(); 
+        }
+
+        function hideVideo(e) {
+            $('video, h1', this).get(0).pause(); 
+        }        
       }
     },
     // Our Work Page
@@ -346,15 +356,7 @@
 
       },
       finalize: function() {        
-        var figure = $(".video").hover( hoverVideo, hideVideo );
 
-        function hoverVideo(e) {  
-            $('video', this).get(0).play(); 
-        }
-
-        function hideVideo(e) {
-            $('video', this).get(0).pause(); 
-        }
 
       }
     }
