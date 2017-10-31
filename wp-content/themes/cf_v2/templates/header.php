@@ -13,11 +13,11 @@
         </div>
     </nav>
     <div class="mobile-overlay">
+      <a class="brand mobile-brand" href="<?= esc_url(home_url('/')); ?>">
+          <img src="../wp-content/uploads/2017/10/logo_01.svg" alt="Causeforce LLC">
+          <img class="cf-infi" src="../wp-content/uploads/2017/10/Group-236.svg" alt="Logo">
+       </a>
        <div class="container">
-            <a class="brand mobile-brand" href="<?= esc_url(home_url('/')); ?>">
-                <img src="../wp-content/uploads/2017/10/logo_01.svg" alt="Causeforce LLC">
-                <img class="cf-infi" src="../wp-content/uploads/2017/10/Group-236.svg" alt="Logo">
-            </a>
             <div class="burger_menu">
                 <?php
                 if (has_nav_menu('primary_navigation')) :
@@ -33,8 +33,7 @@
                     </p>
                 </div>
                 <div class="col-md-3">
-                    <p><strong>P</strong> 310 314 1618</p>
-                    <p><strong>F</strong> 310 314 1718</p>
+                    <p><strong>P</strong> <a href="tel:1-310-314-1618">310 314 1618</a></p>
                 </div>
                 <div class="col-md-3">
                     <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
