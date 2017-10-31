@@ -38,7 +38,7 @@
                 font-size: 30px;
                 z-index: 80;
                 @media screen and (max-width: 768px) {
-                    text-align: center;
+                    text-align: left;
                     width: 75%;
                 }
             }
@@ -86,7 +86,7 @@
         }
     }
     .vid-1, .vid-2, .vid-3 {
-        background-image: url('http://localhost/wp-content/uploads/2017/10/interactive-562x394.jpg');
+        background-image: url('http://staging.causeforce.com/wp-content/uploads/2017/10/interactive-1.jpg');
         background-position: 50%;
         background-size: cover;
     }
@@ -145,6 +145,9 @@
     .home-inner-container {
         max-width: 80%;
         margin: 0 auto;
+        @media screen and (max-width:1095px {
+            padding-top: 25px;
+        }
     }
     .home-top-svg {
         z-index: 80;
@@ -174,7 +177,7 @@
             transform: translateY(-50%);
             color: $blue;
             margin-bottom: 0px;
-            font-size: 29px;
+            font-size: 26px;
         }
     }
     .col-md-6.text-col.show {
