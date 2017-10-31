@@ -229,7 +229,7 @@ span.fa.fa-angle-right {
         }
     }
     p {
-        font-family: $l-font;
+        font-family: $r-font;
         font-size: 14px;
     }
     svg {
@@ -800,7 +800,7 @@ $topenter: -10px;
                 margin-bottom: 0px;
             }
             &:nth-child(2) {
-                font-family: $l-font;
+                font-family: $r-font;
                 margin-bottom: 0px;
             }
         }
@@ -808,7 +808,7 @@ $topenter: -10px;
             margin-bottom: 30px;
         }
         li {
-            font-family: $l-font;
+            font-family: $r-font;
         }
         input {
             width: 100%;
@@ -840,7 +840,7 @@ $topenter: -10px;
             font-size: 20px;
         }
         .text-orange {
-            font-family: $l-font;
+            font-family: $r-font;
             strong {
                 font-family: $b-font;
             }
@@ -890,7 +890,7 @@ $topenter: -10px;
             }
             &:nth-child(2) {
                 p {
-                    font-family: $l-font;
+                    font-family: $r-font;
                     color: $blue;
                 }
             }
@@ -910,7 +910,7 @@ $topenter: -10px;
                 margin-bottom: 30px;
             }
             p {
-                font-family: $l-font;
+                font-family: $r-font;
             }
         }
         .col-12.txt-col {
@@ -929,7 +929,7 @@ $topenter: -10px;
             padding: 10px 20px;
             p {
                 margin-bottom: 0px;
-                font-family: $l-font;
+                font-family: $r-font;
                 color: $white;
                 &:first-child {
                     font-family: $b-font;
@@ -958,7 +958,7 @@ $topenter: -10px;
                 width: 100%;
             }
             p {
-                font-family: $l-font;
+                font-family: $r-font;
                 color: $blue;
             }
         }
@@ -1049,12 +1049,12 @@ $topenter: -10px;
         margin-bottom: 0px;
         padding-top: 50px;
         p {
-            font-family: $l-font;
+            font-family: $r-font;
             color: $blue;
         }
         p.text-orange {
             font-size: 18px;
-            font-family: $l-font;
+            font-family: $r-font;
             margin-bottom: 50px;
             margin-top: 50px;
         }
@@ -1064,7 +1064,7 @@ $topenter: -10px;
     }
     .row-02{
         p {
-            font-family: $l-font;
+            font-family: $r-font;
         }
         h1 {
             margin-bottom: 40px;
@@ -1083,7 +1083,7 @@ $topenter: -10px;
             }
         }
         p {
-            font-family: $l-font;
+            font-family: $r-font;
             font-size: 14px;
         }
         a {
@@ -1303,7 +1303,7 @@ $topenter: -10px;
     .about-bio {
         max-height: 325px;
         overflow-y: scroll;
-        font-family: $l-font;
+        font-family: $r-font;
         color: $blue;
         font-size: 14px;
         padding: 0 10px;
@@ -1315,7 +1315,7 @@ $topenter: -10px;
     }
     .about-title {
         color: $orange;
-        font-family: $l-font;
+        font-family: $r-font;
         font-size: 14px;
     }
     .social-container {
@@ -1375,7 +1375,7 @@ $topenter: -10px;
                 margin-bottom: 20px;
             }
             p {
-                font-family: $l-font;
+                font-family: $r-font;
                 margin-bottom: 20px;
                 &:last-child {
                     margin-bottom: 0px;
@@ -1425,7 +1425,7 @@ $topenter: -10px;
             padding: 20px;
             min-height: 125px;
             p {
-                font-family: $l-font;
+                font-family: $r-font;
                 &:last-child {
                     margin-bottom: 0px;
                     font-size: 14px;

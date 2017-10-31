@@ -5,17 +5,17 @@
     .col-md-4.col-xs-12 {
         &:nth-child(2) {
             p {
-                font-family: "Din Light", Arial, sans-serif;
+                font-family: $r-font;
                 font-size: 14px;
                 color: $white;
                 strong {
-                    font-family: "Din Bold", Arial, sans-serif;
+                    font-family: $b-font;
                     &:nth-child(2) {
                         margin-left: 15px;
                     }
                 }
                 &:last-child {
-                    strong {font-family: "Din Reg", Arial, sans-serif;}
+                    strong {font-family: $r-font;}
                 }
             }
             &:nth-child(2) {

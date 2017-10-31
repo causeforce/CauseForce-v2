@@ -2,11 +2,11 @@
 h1,h2,h3,h4 {
     text-transform: uppercase;
     font-family: "Din Bold", Arial, sans-serif;
-    color:#073564;
+    color: $blue;
 }
 h5 {
  font-family: "Din Bold", Arial, sans-serif;  
- color: #073564;  
+ color: $blue;  
 }
 p, div, span {
     font-family: $body-font;
