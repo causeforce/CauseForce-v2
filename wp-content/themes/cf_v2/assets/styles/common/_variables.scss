@@ -23,10 +23,6 @@ $white: #ffffff;
     src: url('../../assets/fonts/DINAlternateBold.otf');
 }
 @font-face {
-    font-family: 'Din Light';
-    src: url('../../assets/fonts/FF_DIN_Light_Alternate.otf');
-}
-@font-face {
     font-family: 'Font Awesome';
     src: url('../../assets/fonts/FontAwesome/fonts/fontawesome-webfont.ttf') format("ttf"),
         url('../../assets/fonts/FontAwesome/fonts/FontAwesome.otf') format("otf"),
@@ -37,5 +33,4 @@ $white: #ffffff;
 
 $body-font: 'Vesper Libre', Arial, serif;
 $b-font: 'Din Bold', Arial, sans-serif;
-$l-font: 'Din Light', Arial, sans-serif;
 $r-font: 'Din Reg', Arial, sans-serif;

@@ -26,6 +26,16 @@
         });
         $('.bt-menu').on('click', function() {
             $('.mobile-overlay').fadeToggle();
+            $('body, html').toggleClass('scroll, no-scroll');
+            if ($(this).hasClass('active')) {
+                document.ontouchmove = function (e) {
+                  e.preventDefault();
+                };
+            } else {
+                document.ontouchmove = function (e) {
+                  return true;
+                };
+            }
         });
         // Mail Icon/Quick Contact
         $('p.close-icn').on('click', function() {

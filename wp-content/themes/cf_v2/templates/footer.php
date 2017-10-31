@@ -13,8 +13,7 @@
                 Los Angles, CA 90025
             </p>
             <p>
-                <strong>P</strong> 310 314 1618
-                <strong>F</strong> 310 314 1718
+                <strong>P</strong> <a href="tel:310-314-1618">310 314 1618</a>
             </p>
             <p>
                 <strong>&copy;2017 CAUSEFORCE&trade;. All rights reserved.</strong>
