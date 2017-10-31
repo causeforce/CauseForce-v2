@@ -98,14 +98,31 @@
         // JavaScript to be fired on the home page, after the init JS
 
         function hoverVideo(e) {  
-            $('video, h1', this).get(0).play(); 
+            $('video', this).get(0).play(); 
         }
 
         function hideVideo(e) {
-            $('video, h1', this).get(0).pause(); 
+            $('video', this).get(0).pause(); 
         }
           
+        // var figure = $(".jquery-background-video-wrapper").hover( hoverVideo, hideVideo );
         var figure = $(".jquery-background-video-wrapper").hover( hoverVideo, hideVideo );
+
+        // home inner container hovers
+        $('.home-inner-container.home-vid-1 .svg-container, .home-inner-container.home-vid-1 h1,.home-inner-container.home-vid-1 .home-top-svg').on("mouseenter", function(){
+            $('video').get(0).play();
+        });
+
+        $('.home-inner-container.home-vid-2 .svg-container, .home-inner-container.home-vid-2 h1,.home-inner-container.home-vid-2 .home-top-svg').on("mouseenter", function(){
+            $('video').get(1).play();  
+        });
+
+        $('.home-inner-container.home-vid-3 .svg-container, .home-inner-container.home-vid-3 h1,.home-inner-container.home-vid-3 .home-top-svg').on("mouseenter", function(){
+            $('video').get(2).play();
+        });
+        
+
+
       }
     },
     // Our Work Page

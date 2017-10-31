@@ -29,15 +29,16 @@
         .fund-col,
         .events-col{
             h1 {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%,-50%);
+                position: relative;
+                /* top: 50%; */
+                /* left: 50%; */
+                /* -webkit-transform: translate(-50%,-50%); */
+                /* transform: translate(-50%,-50%); */
+                color: #fff;
                 font-size: 30px;
                 z-index: 80;
-                color:#fff;
                 @media screen and (max-width: 768px) {
-                    text-align: center;
+                    text-align: left;
                     width: 75%;
                 }
             }
@@ -85,7 +86,7 @@
         }
     }
     .vid-1, .vid-2, .vid-3 {
-        background-image: url('http://localhost/wp-content/uploads/2017/10/interactive-562x394.jpg');
+        background-image: url('http://staging.causeforce.com/wp-content/uploads/2017/10/interactive-1.jpg');
         background-position: 50%;
         background-size: cover;
     }
@@ -106,6 +107,55 @@
     video::-webkit-media-controls {
         display:none !important;
     }       
+
+    svg#circle {
+    height: 150px;
+    width: 150px;
+    }
+
+    circle {
+    stroke-dasharray: 700;
+    stroke-dashoffset: 700;
+    stroke-linecap: butt;
+    -webkit-transition: all 1s ease-out;
+    -moz-transition: all 1s ease-out;
+    -ms-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    transition: all 1s ease-out;
+    }
+
+    circle:hover {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 700;
+    stroke-width: 2;
+    }
+    .svg-container {
+    display: block;
+    position: relative;
+    max-width: 70px;
+    z-index: 80;
+
+
+  
+
+    }
+    .cls-1, .cls-2, .cls-4 {
+    fill: transparent;
+    }
+    .home-inner-container {
+        max-width: 80%;
+        margin: 0 auto;
+        @media screen and (max-width:1095px) {
+            padding-top: 25px;
+        }
+    }
+    .home-top-svg {
+        z-index: 80;
+        display: block;
+        position: relative;
+        max-width: 55px;
+        margin-bottom: 15px;        
+    }
 }
 
 .col-pic-row {
@@ -127,7 +177,7 @@
             transform: translateY(-50%);
             color: $blue;
             margin-bottom: 0px;
-            font-size: 29px;
+            font-size: 26px;
         }
     }
     .col-md-6.text-col.show {
