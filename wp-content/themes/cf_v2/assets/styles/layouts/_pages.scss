@@ -28,6 +28,9 @@
         .marketing-col,
         .fund-col,
         .events-col{
+            svg {
+                cursor: pointer;
+            }
             h1 {
                 position: relative;
                 /* top: 50%; */
@@ -37,6 +40,7 @@
                 color: #fff;
                 font-size: 30px;
                 z-index: 80;
+                cursor: pointer;
                 @media screen and (max-width: 768px) {
                     text-align: left;
                     width: 75%;
@@ -623,6 +627,17 @@ $topenter: -10px;
 // ***                    *** //
 // **** solutions homepage **** //
 // ***                    *** //
+#solutions-hero {
+    padding: 0px;
+    .solutions-bg {
+        background: url(/wp-content/uploads/2017/10/Solutions-new-header.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 500px;
+        background-position: center top;
+    }
+}
 .animated {
   animation-duration: .4s;
   animation-fill-mode: both;

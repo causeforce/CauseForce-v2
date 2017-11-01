@@ -136,7 +136,7 @@
         //== Home inner container hovers ==\\
           
         // First Video Column
-        $('.home-inner-container.home-vid-1 .svg-container, .home-inner-container.home-vid-1 h1,.home-inner-container.home-vid-1 .home-top-svg').on("mouseenter", function(){
+        $('.home-inner-container.home-vid-1 .svg-container, .home-inner-container.home-vid-1 h1,.home-inner-container.home-vid-1 svg').on("mouseenter", function(){
             $('video').get(0).play();
         });
         $('.video-overlay.overlay-1').on('mouseenter', function(){
@@ -146,7 +146,7 @@
             }); 
         });
         // Second video column
-        $('.home-inner-container.home-vid-2 .svg-container, .home-inner-container.home-vid-2 h1,.home-inner-container.home-vid-2 .home-top-svg').on("mouseenter", function(){
+        $('.home-inner-container.home-vid-2 .svg-container, .home-inner-container.home-vid-2 h1,.home-inner-container.home-vid-2 svg').on("mouseenter", function(){
             $('video').get(1).play();  
         });
         $('.video-overlay.overlay-2').on('mouseenter', function(){
@@ -156,7 +156,7 @@
             }); 
         });
         // Third Video Column
-        $('.home-inner-container.home-vid-3 .svg-container, .home-inner-container.home-vid-3 h1,.home-inner-container.home-vid-3 .home-top-svg').on("mouseenter", function(){
+        $('.home-inner-container.home-vid-3 .svg-container, .home-inner-container.home-vid-3 h1,.home-inner-container.home-vid-3 svg').on("mouseenter", function(){
             $('video').get(2).play();
         });
         $('.video-overlay.overlay-3').on('mouseenter', function(){
@@ -165,6 +165,18 @@
                 duration: 'default'
             }); 
         });
+
+        // column clicks route to selected solutions section
+        $(".marketing-col, .marketing-col h1, .marketing-col svg").on("click", function(){
+             window.location = "http://staging.causeforce.com/solutions/#marketing-digital";
+        });
+        $(".fund-col, .fund-col h1, .fund-col svg").on("click", function(){
+             window.location = "http://staging.causeforce.com/solutions/#fundraiser";
+        });
+        $(".events-col, .events-col h1, .events-col svg").on("click", function(){
+             window.location = "http://staging.causeforce.com/solutions/#events";
+        });
+        
 
 
       }
