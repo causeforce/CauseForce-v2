@@ -55,8 +55,8 @@
                         left: 0;
                         right: 0;
                         bottom: 0;
-                        background: $blue;
-                        opacity: .3;
+                        // background: $blue;
+                        // opacity: .3;
                 }
             }
         }
@@ -759,6 +759,11 @@ $topenter: -10px;
             margin-top: 15px;
         }
     }
+    .fund-cult, .events-exp, .market-digital {
+        h2 {
+            margin-top: 10px;
+        }
+    }
     .close-marketing-row, .close-fundraise-row, .close-events-row{
         width:100%;
         padding-right: 15px;
@@ -841,7 +846,20 @@ $topenter: -10px;
             text-decoration:none;
         }
     }    
-
+    @media screen and (max-width: 768px) {
+        .discover-intro-copy {
+            padding-left: 20px;
+            padding-right:20px;
+        }
+        .consult-text-col {
+            padding-left: 30px;
+            padding-right:30px;
+        }
+        .container.animated-columns-container {
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+    }
     
 }
 
