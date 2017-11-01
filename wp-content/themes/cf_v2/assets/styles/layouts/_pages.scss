@@ -58,6 +58,8 @@
                         // background: $blue;
                         // opacity: .3;
                 }
+
+                        
             }
         }
         .col-md-3 {
@@ -95,6 +97,21 @@
                 }
             }
         }
+        @media screen and (max-width: 995px) {
+            .overlay-1, .overlay-2, .overlay-3 {
+                background-size: cover;
+                background-position: center center;
+            }
+            .overlay-1 {
+                background-image: url('/wp-content/uploads/2017/11/1-1.jpg');
+            }
+            .overlay-2 {
+                background-image: url('/wp-content/uploads/2017/11/2-1.jpg');
+            }
+            .overlay-3 {
+                background-image: url('/wp-content/uploads/2017/11/3-1.jpg');
+            }        
+        }        
     }
     .vid-1, .vid-2, .vid-3 {
         background-image: url('http://staging.causeforce.com/wp-content/uploads/2017/10/interactive-1.jpg');
@@ -162,6 +179,10 @@
         @media screen and (max-width:1095px) {
             padding-top: 25px;
         }
+        @media screen and (max-width:768px) {
+            padding-top: 105px;            
+        }
+            
     }
     .home-top-svg {
         z-index: 80;
@@ -191,7 +212,7 @@
             transform: translateY(-50%);
             color: $blue;
             margin-bottom: 0px;
-            font-size: 26px;
+            font-size: 22px;
         }
     }
     .col-md-6.text-col.show {
