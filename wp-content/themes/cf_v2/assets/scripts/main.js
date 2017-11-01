@@ -139,7 +139,6 @@
         $('.home-inner-container.home-vid-1 .svg-container, .home-inner-container.home-vid-1 h1,.home-inner-container.home-vid-1 .home-top-svg').on("mouseenter", function(){
             $('video').get(0).play();
         });
-        $('.video-overlay.overlay-1').css('background', 'red');
         $('.video-overlay.overlay-1').on('mouseenter', function(){
            var playLivicons = $('.col.align-self-center.home-inner-container.home-vid-1 span');
             playLivicons.playLiviconEvo({
@@ -150,7 +149,6 @@
         $('.home-inner-container.home-vid-2 .svg-container, .home-inner-container.home-vid-2 h1,.home-inner-container.home-vid-2 .home-top-svg').on("mouseenter", function(){
             $('video').get(1).play();  
         });
-        $('.video-overlay.overlay-2').css('background', 'red');
         $('.video-overlay.overlay-2').on('mouseenter', function(){
            var playLivicons = $('.col.align-self-center.home-inner-container.home-vid-2 span');
             playLivicons.playLiviconEvo({
@@ -161,7 +159,6 @@
         $('.home-inner-container.home-vid-3 .svg-container, .home-inner-container.home-vid-3 h1,.home-inner-container.home-vid-3 .home-top-svg').on("mouseenter", function(){
             $('video').get(2).play();
         });
-        $('.video-overlay.overlay-3').css('background', 'red');
         $('.video-overlay.overlay-3').on('mouseenter', function(){
            var playLivicons = $('.col.align-self-center.home-inner-container.home-vid-3 span');
             playLivicons.playLiviconEvo({
