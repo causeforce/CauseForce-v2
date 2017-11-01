@@ -319,7 +319,7 @@ gulp.task( 'deploy', function () {
     // using base = '.' will transfer everything to /subdomain/staging correctly 
     // turn off buffering in gulp.src for best performance 
  
-    return gulp.src( globs, { base: './dist/', buffer: false } )
+    return gulp.src( globs, { base: 'dist/', buffer: false } )
 //        .pipe( conn.newer( '/subdomains/staging/wp-content/themes/cf_v2/dist' ) ) // only upload newer files 
         .pipe( conn.dest( '/subdomains/staging/wp-content/themes/cf_v2/dist' ) );
  
