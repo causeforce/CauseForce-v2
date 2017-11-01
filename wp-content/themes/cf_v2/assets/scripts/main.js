@@ -139,23 +139,49 @@
     'our_work': {
       init: function() {
         // JavaScript to be fired on the about us page
-        $('.row-02 .col-md-3').on('click', function(){
-            $(this).children('.text-cont').addClass('orange-bg');
-            $(this).siblings('.col-md-3').children('.text-cont').removeClass('orange-bg');
-            if ($(this).hasClass('db-col')) {
-                $(this).siblings('.col-12.txt-col').children('p.diabetes-txt').slideDown();
-                $(this).siblings('.col-12.txt-col').children().not('p.diabetes-txt').slideUp();
-            } else if ($(this).hasClass('afp-col')) {
-                $(this).siblings('.col-12.txt-col').children('p.afp-txt').slideDown();
-                $(this).siblings('.col-12.txt-col').children().not('p.afp-txt').slideUp();
-            } else if ($(this).hasClass('ccrf-col')) {
-                $(this).siblings('.col-12.txt-col').children('p.ccrf-txt').slideDown();
-                $(this).siblings('.col-12.txt-col').children().not('p.ccrf-txt').slideUp();
-            } else if ($(this).hasClass('ow-col')) {
-                $(this).siblings('.col-12.txt-col').children('p.onewalk-txt').slideDown();
-                $(this).siblings('.col-12.txt-col').children().not('p.onewalk-txt').slideUp();
-            }
-        });
+        var windowSize = $(window).width();
+          
+        if (windowSize > 768) {
+            $('.row-02 .col-md-3').on('click', function(){
+                $(this).children('.text-cont').addClass('orange-bg');
+                $(this).siblings('.col-md-3').children('.text-cont').removeClass('orange-bg');
+                if ($(this).hasClass('db-col')) {
+                    $(this).siblings('.col-12.txt-col').children('p.diabetes-txt').slideDown();
+                    $(this).siblings('.col-12.txt-col').children().not('p.diabetes-txt').slideUp();
+                } else if ($(this).hasClass('afp-col')) {
+                    $(this).siblings('.col-12.txt-col').children('p.afp-txt').slideDown();
+                    $(this).siblings('.col-12.txt-col').children().not('p.afp-txt').slideUp();
+                } else if ($(this).hasClass('ccrf-col')) {
+                    $(this).siblings('.col-12.txt-col').children('p.ccrf-txt').slideDown();
+                    $(this).siblings('.col-12.txt-col').children().not('p.ccrf-txt').slideUp();
+                } else if ($(this).hasClass('ow-col')) {
+                    $(this).siblings('.col-12.txt-col').children('p.onewalk-txt').slideDown();
+                    $(this).siblings('.col-12.txt-col').children().not('p.onewalk-txt').slideUp();
+                }
+            });
+        } else  {
+            $('.ow-col').append($('.onewalk-txt'));
+            $('.ccrf-col').append($('.ccrf-txt').hide());
+            $('.db-col').append($('.diabetes-txt').hide());
+            $('.afp-col').append($('.afp-txt').hide());
+            $('.row-02 .col-md-3').on('click', function(){
+                $(this).children('.text-cont').addClass('orange-bg');
+                $(this).siblings('.col-md-3').children('.text-cont').removeClass('orange-bg');
+                if ($(this).hasClass('db-col')) {
+                    $(this).children('p.diabetes-txt').slideDown();
+                    $(this).siblings('.col-md-3').children('p').not('p.diabetes-txt').slideUp();
+                } else if ($(this).hasClass('afp-col')) {
+                    $(this).children('p.afp-txt').slideDown();
+                    $(this).siblings('.col-md-3').children('p').not('p.afp-txt').slideUp();
+                } else if ($(this).hasClass('ccrf-col')) {
+                    $(this).children('p.ccrf-txt').slideDown();
+                    $(this).siblings('.col-md-3').children('p').not('p.ccrf-txt').slideUp();
+                } else if ($(this).hasClass('ow-col')) {
+                    $(this).children('p.onewalk-txt').slideDown();
+                    $(this).siblings('.col-md-3').children('p').not('p.onewalk-txt').slideUp();
+                }
+            });
+        }
       }
     },
     // About Work Page
