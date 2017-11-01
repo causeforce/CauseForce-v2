@@ -120,14 +120,17 @@
     /* Hide Play button + controls on iOS */
     video::-webkit-media-controls {
         display:none !important;
-    }       
+    }
+    .lievo-svg-wrapper {
+        z-index: 99;
+    }
 
-    svg#circle {
+    svg#arrow-circle {
     height: 150px;
     width: 150px;
     }
 
-    circle {
+    circle.circle {
     stroke-dasharray: 700;
     stroke-dashoffset: 700;
     stroke-linecap: butt;
@@ -138,7 +141,7 @@
     transition: all 1s ease-out;
     }
 
-    circle:hover {
+    circle.circle:hover {
     stroke-dashoffset: 0;
     stroke-dasharray: 700;
     stroke-width: 2;
@@ -148,10 +151,6 @@
     position: relative;
     max-width: 70px;
     z-index: 80;
-
-
-  
-
     }
     .cls-1, .cls-2, .cls-4 {
     fill: transparent;
@@ -252,7 +251,7 @@ span.fa.fa-angle-right {
     margin-right: 0px;
 }
 
-// Gray Row
+// Homepage Gray Row
 .gray-row {
     background: rgba(227,230,236, 0.5);
     color: $blue;
@@ -297,10 +296,6 @@ span.fa.fa-angle-right {
         font-size: 14px;
     }
     svg {
-        display: block;
-        width: 50px;
-        margin: 0 auto;
-        margin-top: -10px;
     }
 }
 
@@ -1473,6 +1468,9 @@ $topenter: -10px;
 // ***                      *** //
 // **** Press Page Styling **** //
 // ***                      *** //
+nav.navigation.posts-navigation {
+    display: none;
+}
 #press-hero {
     padding: 0px;
     .press-bg {
@@ -1501,12 +1499,19 @@ $topenter: -10px;
                     margin-bottom: 0px;
                 }
             }
+            p.text-orange, img {
+                display: none;
+            }
+            button {
+                margin-top: 20px;
+                padding: 10px 20px;
+            }
             &:first-child {
                 box-shadow: 0 0 20px #dadada;
                 padding: 40px;
             }
             &:last-child {
-                background: url(/wp-content/themes/cf_v2/assets/images/col_img.jpg);
+                background: url(/wp-content/uploads/2017/11/Press_Feature.png);
                 background-position: center center;
                 background-size: cover;
                 min-height: 300px;
@@ -1555,6 +1560,11 @@ $topenter: -10px;
                 font-family: $r-font;
                 text-transform: uppercase;
             }
+        }
+    }
+    .row-02 {
+        .col-md-4:first-child {
+            display: none;
         }
     }
 }

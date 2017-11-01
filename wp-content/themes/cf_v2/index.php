@@ -21,6 +21,7 @@ foreach($lastposts as $post) : setup_postdata($post); ?>
         <div class="col-md-6">
             <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
             <?php the_content(); ?>
+            <a class="press-ft-link" href="#"><button class="orange-btn">More Information</button></a>
         </div>
         <div class="col-md-6 img-col"></div>
     </div>

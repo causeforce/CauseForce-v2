@@ -19,7 +19,8 @@
     'common': {
       init: function() {
         // JavaScript to be fired on all pages
-
+        
+        // Full screen menu 
         $('.bt-menu').click(function(e) {
             $(this).toggleClass('active');
             return false;
@@ -70,6 +71,10 @@
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired
+        
+        // Press page js since press page lives inside index.php must be global code else it won't work
+        var pressLink = $('#press .row-01 .col-md-6 a').attr('href');
+        $('.press-ft-link').attr('href', pressLink);
       }
     },
     // Home page
@@ -77,9 +82,19 @@
       init: function() {
         // JavaScript to be fired on the home page
         $(".gray-row").waypoint(function(){
+            var myLivicons = $('.col-md-1 span');
+            var globeIcon = $('.row .col-md-1:eq(2) span');
+            myLivicons.playLiviconEvo({
+                duration: 'default',
+                repeat: '1'
+            });
+            globeIcon.playLiviconEvo({
+                duration: 'default',
+                repeat: '3'
+            });
         // $('.gray-row').fadeToggle();
-            $('.square').addClass('show');
-            $('#graph').addClass('show');
+//            $('.square').addClass('show');
+//            $('#graph').addClass('show');
             }, { 
                 offset: '98%'
         });
@@ -118,19 +133,41 @@
         // var figure = $(".jquery-background-video-wrapper").hover( hoverVideo, hideVideo );
         var figure = $(".jquery-background-video-wrapper").hover( hoverVideo, hideVideo );
 
-        // home inner container hovers
+        //== Home inner container hovers ==\\
+          
+        // First Video Column
         $('.home-inner-container.home-vid-1 .svg-container, .home-inner-container.home-vid-1 h1,.home-inner-container.home-vid-1 .home-top-svg').on("mouseenter", function(){
             $('video').get(0).play();
         });
-
+        $('.video-overlay.overlay-1').css('background', 'red');
+        $('.video-overlay.overlay-1').on('mouseenter', function(){
+           var playLivicons = $('.col.align-self-center.home-inner-container.home-vid-1 span');
+            playLivicons.playLiviconEvo({
+                duration: 'default'
+            }); 
+        });
+        // Second video column
         $('.home-inner-container.home-vid-2 .svg-container, .home-inner-container.home-vid-2 h1,.home-inner-container.home-vid-2 .home-top-svg').on("mouseenter", function(){
             $('video').get(1).play();  
         });
-
+        $('.video-overlay.overlay-2').css('background', 'red');
+        $('.video-overlay.overlay-2').on('mouseenter', function(){
+           var playLivicons = $('.col.align-self-center.home-inner-container.home-vid-2 span');
+            playLivicons.playLiviconEvo({
+                duration: 'default'
+            }); 
+        });
+        // Third Video Column
         $('.home-inner-container.home-vid-3 .svg-container, .home-inner-container.home-vid-3 h1,.home-inner-container.home-vid-3 .home-top-svg').on("mouseenter", function(){
             $('video').get(2).play();
         });
-        
+        $('.video-overlay.overlay-3').css('background', 'red');
+        $('.video-overlay.overlay-3').on('mouseenter', function(){
+           var playLivicons = $('.col.align-self-center.home-inner-container.home-vid-3 span');
+            playLivicons.playLiviconEvo({
+                duration: 'default'
+            }); 
+        });
 
 
       }
@@ -412,7 +449,7 @@
 
 
       }
-    }
+    },
 
 
   };
