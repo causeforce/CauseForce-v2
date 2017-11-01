@@ -18,24 +18,28 @@
           <img class="cf-infi" src="../wp-content/uploads/2017/10/Group-236.svg" alt="Logo">
        </a>
        <div class="container">
-            <div class="burger_menu">
-                <?php
-                if (has_nav_menu('primary_navigation')) :
-                    wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']);
-                endif;
-                ?>
-            </div>
-            <div class="row justify-content-md-center mobile-footer">
-                <div class="col-md-3">
+           <div class="row links-row">
+               <div class="col-12">
+                    <div class="burger_menu">
+                        <?php
+                        if (has_nav_menu('primary_navigation')) :
+                            wp_nav_menu(['theme_location' => 'primary_navigation', 'menu_class' => 'nav']);
+                        endif;
+                        ?>
+                    </div>
+               </div>
+           </div>
+           <div class="row mobile-footer">
+                <div class="col-md-4">
                     <p>
                         12301 Wilshire Blvd., Suite 430,<br>
                         Los Angeles, CA 90025
                     </p>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <p><strong>P</strong> <a href="tel:1-310-314-1618">310 314 1618</a></p>
                 </div>
-                <div class="col-md-3">
+                <div class="col-md-4">
                     <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
                     <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                     <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
