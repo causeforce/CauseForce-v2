@@ -987,6 +987,9 @@ $topenter: -10px;
             cursor: pointer;
             -moz-cursor: pointer;
             -webkit-cursor: pointer;
+            p:nth-child(3) {
+                margin-top: 20px;
+            }
         }
         .col-12 {
             h1 {
@@ -1202,6 +1205,10 @@ $topenter: -10px;
                 max-width: 300px;
                 display: block;
                 margin: 0 auto;
+                @media screen and (max-width: 400px) {
+                    margin-bottom: 20px;
+                    max-width: 260px;
+                }
             }
         }
         h1 {
@@ -1212,7 +1219,7 @@ $topenter: -10px;
     }
 }
 #about-gray-row {
-    background: $gray;
+    background: rgba(227,230,236,.5);
     .row {
         padding: 50px 0;
     }
