@@ -305,12 +305,6 @@ span.fa.fa-angle-right {
                         display: block;
                     }
                 }
-                span.livicon-evo.livicon-evo-holder {
-                    @media screen and (max-width: 768px) {
-                        display: block;
-                        margin: 0 auto;
-                    }
-                }
             }
         }
     }
@@ -318,6 +312,7 @@ span.fa.fa-angle-right {
         padding-top: 10px;
         &:first-child {
             margin-bottom: 10px;
+            width: 150px;
         }
     }
     p {
@@ -921,6 +916,9 @@ $topenter: -10px;
     margin-bottom: 40px;
     .inner-container {
         padding: 0 50px;
+        @media screen and (max-width: 400px) {
+            padding: 0px;
+        }
         p, li {
             color: $blue;
         }
