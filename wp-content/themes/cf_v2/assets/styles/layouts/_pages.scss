@@ -1517,7 +1517,7 @@ nav.navigation.posts-navigation {
 #press-hero {
     padding: 0px;
     .press-bg {
-        background: url(/wp-content/themes/cf_v2/assets/images/Press.jpg);
+        background: url(/wp-content/uploads/2017/11/Press_Feat_Image.png);
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -1551,7 +1551,11 @@ nav.navigation.posts-navigation {
             }
             &:first-child {
                 box-shadow: 0 0 20px #dadada;
-                padding: 40px;
+                padding: 40px 70px 40px 60px;
+                @media screen and (max-width: 768px) {
+                    box-shadow: none;
+                    padding:30px;
+                }
             }
             &:last-child {
                 background: url(/wp-content/uploads/2017/11/Press_Feature.png);
