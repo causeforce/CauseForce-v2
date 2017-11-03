@@ -37,14 +37,13 @@
                     </p>
                 </div>
                 <div class="col-md-4">
-                    <p><strong>P</strong> <a href="tel:1-310-314-1618">310 314 1618</a></p>
+                   <p>
+                        <strong>P</strong> <a href="tel:1-323-654-9255">323-654-9255</a>
+                    </p>
                 </div>
                 <div class="col-md-4">
-                    <a href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                    <a href="https://www.facebook.com/CauseForce/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                    <a href="https://www.linkedin.com/company/54640/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
                 </div>
             </div>
         </div>

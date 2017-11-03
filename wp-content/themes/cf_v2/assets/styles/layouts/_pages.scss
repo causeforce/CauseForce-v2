@@ -85,9 +85,9 @@
                     height: auto;
                 }
                 @media screen and (min-height: 1039px) {
-                    width: auto;
-                    min-width: 480px;
-                    height: 100%;
+                    width: 100%;
+                    min-width: auto;
+                    height: auto;
                 }
             }
             @media screen and (max-width: 400px) {
@@ -217,6 +217,7 @@
             color: $blue;
             margin-bottom: 0px;
             font-size: 29px;
+            padding: 0 30px;
             @media screen and (max-width: 768px) {
                 font-size:22px;
             }
@@ -312,7 +313,7 @@ span.fa.fa-angle-right {
         padding-top: 10px;
         &:first-child {
             margin-bottom: 10px;
-            width: 150px;
+            width: 160px;
         }
     }
     p {
@@ -577,6 +578,9 @@ $topenter: -10px;
         transition: all 0.4s ease-in-out;
         transform: translateX(-200px);
         opacity: 0;
+        p {
+            font-size: 22px;
+        }
     }
     .talk-col.show{
         opacity: 1;
@@ -587,8 +591,7 @@ $topenter: -10px;
             transition: all 0.4s ease-in;
             margin: 0 auto;
             display: block;
-            position: relative;
-            top: 30%;
+            margin-top: 50px;
             transform: translateX(-200px);
             opacity: 0;
         }
@@ -927,13 +930,6 @@ $topenter: -10px;
         }
         p {
             font-family: $r-font;
-            &:first-child {
-                margin-bottom: 0px;
-            }
-            &:nth-child(2) {
-                font-family: $r-font;
-                margin-bottom: 0px;
-            }
         }
         ul {
             margin-bottom: 30px;
@@ -991,7 +987,7 @@ $topenter: -10px;
 #ow-hero {
     padding: 0px;
     .ow-bg{
-        background: url(/wp-content/themes/cf_v2/assets/images/OurWork.jpg);
+        background: url(/wp-content/uploads/2017/11/Our-Work.jpg);
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -1010,15 +1006,21 @@ $topenter: -10px;
     .row-01 {
         border-bottom: 2px solid #dadada;
         padding-bottom: 40px;
-        padding-top: 25px;        
+        padding-top: 25px;
+        p {
+            text-align: center;
+        }
         h4 {
             font-family: $body-font;
             text-transform: none;
             color: $blue;
-            width: 550px;
+            padding: 0 100px;
             display: block;
             margin: 0 auto;
             margin-bottom: 10px;
+            @media screen and (max-width: 768px) {
+                padding: 0 20px;
+            }
             @media screen and (max-width: 400px) {
                 width: 100%;
             }
@@ -1190,7 +1192,7 @@ $topenter: -10px;
 #about-hero {
     padding: 0px;
     .about-bg {
-        background: url(/wp-content/themes/cf_v2/assets/images/About.jpg);
+        background: url(/wp-content/uploads/2017/11/About-1.jpg);
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -1210,6 +1212,10 @@ $topenter: -10px;
         p {
             font-family: $r-font;
             color: $blue;
+            padding: 0 50px;
+            @media screen and (max-width: 400px) {
+                padding: 0 20px;
+            }
         }
         p.text-orange {
             font-size: 18px;
@@ -1256,6 +1262,7 @@ $topenter: -10px;
             }
             p {
                 text-align: center;
+                padding: 0 40px;
             }
             a {
                 display: block;
@@ -1269,17 +1276,17 @@ $topenter: -10px;
     }
     .row-04 {
         .row {
+            width: 100%;
             margin-top: 0px;
             margin-left: 0px;
             margin-right: 0px;
             img {
                 width: 100%;
-                max-width: 300px;
+                max-width: 200px;
                 display: block;
                 margin: 0 auto;
                 @media screen and (max-width: 400px) {
                     margin-bottom: 20px;
-                    max-width: 260px;
                 }
             }
         }
@@ -1312,15 +1319,25 @@ $topenter: -10px;
     background: rgba(0,55,100,0.7);
 }
 #aboutModal {
+    .btn-container {
+        position: relative;
+        width: 100%;
+    }
     button.fa.fa-times-circle {
         background: none;
         border: 0px;
         position: absolute;
-        color: orange;
+        color: $orange;
         right: -25px;
         top: -10px;
         z-index: 99;
         cursor: pointer;
+        @media screen and (max-width: 400px) {
+            top: -6px;
+            right: -35px;
+            margin: 0;
+            text-align: initial;
+        }
     }
     i.fa.fa-plus-circle {
         position: absolute;
@@ -1347,9 +1364,11 @@ $topenter: -10px;
         outline: 0;
     }
     .modal-header {
-        background: #fed201;
-        color: #000;
-        min-height: 60px !important;
+        border: none;
+        position: relative;
+        width: 100%;
+        border: none;
+        padding: 0px;
     }
     .modal-title {
         width: 100%;
@@ -1443,6 +1462,9 @@ $topenter: -10px;
         img {
             display: block;
             margin: 0 auto;
+            @media screen and (max-width: 400px) {
+                width: 90%;
+            }
         }
         svg {
             width: 53%;
@@ -1455,6 +1477,9 @@ $topenter: -10px;
                 .blueFill {
                     fill: $blue;
                 }
+            }
+            @media screen and (max-width: 400px) {
+                width: 27%;
             }
         }
     }
@@ -1521,6 +1546,16 @@ $topenter: -10px;
             display: block;
             margin: 0 auto;
         }
+        @media screen and (max-width: 400px) {
+            width: 155px;
+            left: -63px;
+        }
+    }
+    @media screen and (max-width: 400px) {
+        .about-name,
+        .about-title {
+            padding: 0 10px;
+        }
     }
 }
 
@@ -1533,7 +1568,7 @@ nav.navigation.posts-navigation {
 #press-hero {
     padding: 0px;
     .press-bg {
-        background: url(/wp-content/uploads/2017/11/Press_Feat_Image.png);
+        background: url(/wp-content/uploads/2017/11/Press-1.jpg);
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -1574,7 +1609,7 @@ nav.navigation.posts-navigation {
                 }
             }
             &:last-child {
-                background: url(/wp-content/uploads/2017/11/Press_Feature.png);
+                background: url(/wp-content/uploads/2017/11/Press_Feat_Image.png);
                 background-position: center center;
                 background-size: cover;
                 min-height: 300px;

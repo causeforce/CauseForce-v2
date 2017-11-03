@@ -6,7 +6,7 @@
 .menu-cont {
     padding: 25px 20px 0px;
     @media screen and (max-width: 400px) {
-        padding: 5px 0;
+        padding: 13px 0;
     }
     // Logo
     .brand {
@@ -22,6 +22,7 @@
                 max-width: 53%;
             }
             @media screen and (max-width: 400px) {
+                margin-left: auto;
                 &:first-child {
                     display: none !important;
                 }
@@ -63,6 +64,7 @@
         img {
             &:first-child {
                 width: 100% !important;
+                max-width: 250px !important;
                 @media screen and (max-width: 400px) {
                     display: none;
                 }
@@ -75,6 +77,10 @@
         }
         @media screen and (max-width: 768px) {
             top: 20px;
+        }
+        @media screen and (max-width: 400px) {
+            top: 15px;
+            left: 0px;
         }
     }
     .col-md-4 {
@@ -94,6 +100,7 @@
  */
 .burger_menu {
     position: relative;
+    margin-top: 3%;
     .nav {
         display: block;
     }
@@ -119,12 +126,12 @@
         }
     }
     @media screen and (max-width: 400px) {
-        top: 30px;
+        top: 15px;
     }
 }
 .bt-menu {
     position: absolute;
-    right: 20px;
+    right: 45px;
     top: 30px;
     display: block;
     width: 50px;
@@ -181,6 +188,9 @@
         &::after {
             transform: rotate(-45deg);
         }
+    }
+    @media screen and (max-width: 400px) {
+        top: 20px;
     }
 }
 
