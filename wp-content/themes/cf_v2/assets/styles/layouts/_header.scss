@@ -36,6 +36,7 @@
 .banner {
     position: relative;
     z-index: 119;
+    transition: all 0.2s ease-in-out;
 }
 
 // Mobile Menu Overlay
@@ -86,6 +87,13 @@
     .col-md-4 {
         &:last-child {
             margin-bottom: 20px;
+        }
+    }
+    .fa {
+        font-size: 50px;
+        vertical-align: bottom;
+        @media screen and (max-width: 400px) {
+            font-size: calc(3vw + 3vh);
         }
     }
 }
@@ -191,6 +199,7 @@
     }
     @media screen and (max-width: 400px) {
         top: 20px;
+        right: 30px;
     }
 }
 

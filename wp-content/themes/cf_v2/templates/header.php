@@ -30,18 +30,7 @@
                </div>
            </div>
            <div class="row mobile-footer">
-                <div class="col-md-4">
-                    <p>
-                        12301 Wilshire Blvd., Suite 430,<br>
-                        Los Angeles, CA 90025
-                    </p>
-                </div>
-                <div class="col-md-4">
-                   <p>
-                        <strong>P</strong> <a href="tel:1-323-654-9255">323-654-9255</a>
-                    </p>
-                </div>
-                <div class="col-md-4">
+                <div class="col-12">
                     <a href="https://www.facebook.com/CauseForce/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
                     <a href="https://www.linkedin.com/company/54640/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
                 </div>
