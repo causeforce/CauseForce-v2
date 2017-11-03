@@ -68,7 +68,7 @@
 }
 .mail-icn {
     position: fixed;
-    right: 20px;
+    right: 45px;
     bottom: 30px;
     cursor: pointer;
     background: #fff;
@@ -94,6 +94,7 @@ input.wpcf7-form-control.wpcf7-text {
     input {
         @extend .orange-btn-form;
         padding: 0px !important;
+        height: 60px !important;
     }
 }
 .quick-form-btn-cont {
