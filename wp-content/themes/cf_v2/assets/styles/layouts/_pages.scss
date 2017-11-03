@@ -3,7 +3,27 @@
 // ***                    *** //
 
 .home-hero {
-    height: 108vh;
+    height: calc(107vh + 1px);
+    .yellow-bar {
+        width: 10%;
+        height: 15px;
+        position: absolute;
+        z-index: 80;
+        background: #F5C400;
+        top: 65px;
+        left: 0;        
+        @media screena and (max-width: 768px) {
+            top: 0;
+        }
+    }
+    .orange-bar {
+    background: orange;
+    bottom: 0;
+    position: absolute;
+    width: 45%;
+    height: 15px;
+    right: 0;
+    }
     .row {
         height: 100%;
         @media screen and (max-width: 768px) {
@@ -14,15 +34,18 @@
             background: $blue;
             h1 {
                 position: absolute;
-                top: 50%;
+                top: 41%;
                 left: 50%;
                 transform: translate(-50%,-50%);
                 font-size: 2vw;
                 font-family: $body-font;
                 color: $white;
-                width: 75%;
-                font-size: 30px;
+                width: 85%;
+                font-size: 38px;
                 text-transform: none;
+                padding-left: 25px;
+                padding-right: 25px;
+                line-height: 54px;
             }
         }
         .marketing-col,
@@ -164,6 +187,7 @@
     position: relative;
     max-width: 70px;
     z-index: 80;
+    margin-top: 25px;    
     }
     .cls-1, .cls-2, .cls-4 {
     fill: transparent;
@@ -171,9 +195,10 @@
     .home-inner-container {
         max-width: 80%;
         margin: 0 auto;
-        @media screen and (max-width:1095px) {
-            padding-top: 25px;
+        @media screen and (min-width: 996px) {
+            margin-top: 200px;
         }
+
         @media screen and (max-width:768px) {
             padding-top: 105px;            
         }
@@ -186,6 +211,9 @@
         max-width: 55px;
         margin-bottom: 15px;        
     }
+    .home-header-svg {
+        margin-bottom: 15px;
+    }    
 }
 
 .col-pic-row {
