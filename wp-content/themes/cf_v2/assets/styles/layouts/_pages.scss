@@ -989,7 +989,10 @@ $topenter: -10px;
 #our-work {
     .mobile-cont {
         padding-top: 25px;
-        padding-bottom: 40px;        
+        padding-bottom: 40px;
+        @media screen and (max-width: 400px) {
+            padding-bottom: 0px;
+        }
     }
     .txt-col {
         h2 {
@@ -1079,7 +1082,7 @@ $topenter: -10px;
             }
         }
         .col-12.txt-col {
-            .diabetes-txt,
+            .onewalk-txt,
             .afp-txt,
             .ccrf-txt {
                 display: none;
@@ -1164,6 +1167,7 @@ $topenter: -10px;
                     z-index: auto;
                     margin-top: 1px;
                     box-shadow: none;
+                    padding: 0 20px;
                 }
                 p {
                     position: absolute;
