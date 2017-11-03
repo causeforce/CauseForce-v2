@@ -8,13 +8,14 @@
             </a>
         </div>
         <div class="col-md-4 col-xs-12">
-            <p>
-                12301 Wilshire Blvd., Suite 430,<br>
-                Los Angles, CA 90025
-            </p>
-            <p>
-                <strong>P</strong> <a href="tel:323-654-9255">323-654-9255</a>
-            </p>
+            <ul class="footer-site-map">
+                <li><a href="/about">About</a></li>
+                <li><a href="/solutions">Solutions</a></li>
+                <li> <a href="/our-work">Our Work</a></li>
+                <li><a href="/press">Press</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/privacy-policy">Privacy Policy</a></li>      
+            </ul>
             <p>
                 <strong>&copy;2017 CAUSEFORCE&trade;. All rights reserved.</strong>
             </p>

@@ -191,40 +191,41 @@
             $('.row-02 .col-md-3').on('click', function(){
                 $(this).children('.text-cont').addClass('orange-bg');
                 $(this).siblings('.col-md-3').children('.text-cont').removeClass('orange-bg');
-                if ($(this).hasClass('db-col')) {
-                    $(this).siblings('.col-12.txt-col').children('p.diabetes-txt').slideDown();
-                    $(this).siblings('.col-12.txt-col').children().not('p.diabetes-txt').slideUp();
-                } else if ($(this).hasClass('afp-col')) {
-                    $(this).siblings('.col-12.txt-col').children('p.afp-txt').slideDown();
-                    $(this).siblings('.col-12.txt-col').children().not('p.afp-txt').slideUp();
+                if ($(this).hasClass('ow-col')) {
+                    $(this).siblings('.col-12.txt-col').children('.onewalk-txt').slideDown();
+                    $(this).siblings('.col-12.txt-col').children().not('.onewalk-txt').slideUp();
+                }                
+                else if ($(this).hasClass('afp-col')) {
+                    $(this).siblings('.col-12.txt-col').children('.afp-txt').slideDown();
+                    $(this).siblings('.col-12.txt-col').children().not('.afp-txt').slideUp();
                 } else if ($(this).hasClass('ccrf-col')) {
-                    $(this).siblings('.col-12.txt-col').children('p.ccrf-txt').slideDown();
-                    $(this).siblings('.col-12.txt-col').children().not('p.ccrf-txt').slideUp();
-                } else if ($(this).hasClass('ow-col')) {
-                    $(this).siblings('.col-12.txt-col').children('p.onewalk-txt').slideDown();
-                    $(this).siblings('.col-12.txt-col').children().not('p.onewalk-txt').slideUp();
+                    $(this).siblings('.col-12.txt-col').children('.ccrf-txt').slideDown();
+                    $(this).siblings('.col-12.txt-col').children().not('.ccrf-txt').slideUp();
+                }  else if ($(this).hasClass('db-col')) {
+                    $(this).siblings('.col-12.txt-col').children('.diabetes-txt').slideDown();
+                    $(this).siblings('.col-12.txt-col').children().not('.diabetes-txt').slideUp();
                 }
             });
         } else  {
-            $('.ow-col').append($('.onewalk-txt'));
+            $('.db-col').append($('.diabetes-txt'));            
             $('.ccrf-col').append($('.ccrf-txt').hide());
-            $('.db-col').append($('.diabetes-txt').hide());
+            $('.ow-col').append($('.onewalk-txt').hide());
             $('.afp-col').append($('.afp-txt').hide());
             $('.row-02 .col-md-3').on('click', function(){
                 $(this).children('.text-cont').addClass('orange-bg');
                 $(this).siblings('.col-md-3').children('.text-cont').removeClass('orange-bg');
                 if ($(this).hasClass('db-col')) {
-                    $(this).children('p.diabetes-txt').slideDown();
-                    $(this).siblings('.col-md-3').children('p').not('p.diabetes-txt').slideUp();
+                    $(this).children('.diabetes-txt').slideDown();
+                    $(this).siblings('.col-md-3').children('.mobile-cont').not('.diabetes-txt').slideUp();
                 } else if ($(this).hasClass('afp-col')) {
-                    $(this).children('p.afp-txt').slideDown();
-                    $(this).siblings('.col-md-3').children('p').not('p.afp-txt').slideUp();
+                    $(this).children('.afp-txt').slideDown();
+                    $(this).siblings('.col-md-3').children('.mobile-cont').not('.afp-txt').slideUp();
                 } else if ($(this).hasClass('ccrf-col')) {
-                    $(this).children('p.ccrf-txt').slideDown();
-                    $(this).siblings('.col-md-3').children('p').not('p.ccrf-txt').slideUp();
+                    $(this).children('.ccrf-txt').slideDown();
+                    $(this).siblings('.col-md-3').children('.mobile-cont').not('.ccrf-txt').slideUp();
                 } else if ($(this).hasClass('ow-col')) {
-                    $(this).children('p.onewalk-txt').slideDown();
-                    $(this).siblings('.col-md-3').children('p').not('p.onewalk-txt').slideUp();
+                    $(this).children('.onewalk-txt').slideDown();
+                    $(this).siblings('.col-md-3').children('.mobile-cont').not('.onewalk-txt').slideUp();
                 }
             });
         }
