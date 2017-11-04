@@ -17,7 +17,7 @@
         }
     }
     .orange-bar {
-    background: orange;
+    background: #E57A20;
     bottom: 0;
     position: absolute;
     width: 45%;
@@ -106,7 +106,7 @@
                 right: 0;
                 bottom: 0;
                 left: 0;
-                top: 0;
+                top: 65px;
             }
             @media screen and (max-width: 400px) {
                 white-space: initial;
@@ -1634,6 +1634,10 @@ nav.navigation.posts-navigation {
             h3 {
                 color: $blue;
                 margin-bottom: 20px;
+                @media screen and (max-width: 768px) {
+                    text-align: center;
+                }
+
             }
             p {
                 font-family: $r-font;
@@ -1641,6 +1645,9 @@ nav.navigation.posts-navigation {
                 &:last-child {
                     margin-bottom: 0px;
                 }
+                @media screen and (max-width: 768px) {
+                    text-align: center;
+                }                
             }
             p.text-orange, img {
                 display: none;
@@ -1648,6 +1655,11 @@ nav.navigation.posts-navigation {
             button {
                 margin-top: 20px;
                 padding: 10px 20px;
+                @media screen and (max-width: 768px) {
+                    text-align: center;
+                    display: block;
+                    margin: 20px auto 10px auto;
+                }                
             }
             &:first-child {
                 box-shadow: 0 0 20px #dadada;
@@ -1766,6 +1778,7 @@ ul.footer-site-map {
     h1,h2 {
     margin-top: 30px;
     margin-bottom: 40px;
+    text-transform: none;    
     }
 
 }
