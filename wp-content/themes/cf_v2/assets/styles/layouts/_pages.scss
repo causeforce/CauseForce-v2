@@ -1019,6 +1019,18 @@ $topenter: -10px;
     }
 }
 #our-work {
+    .img-col-1 {
+        background-image: url(/wp-content/uploads/2017/10/Ride_SubHero2.jpg);
+    }
+    .img-col-2 {
+        background-image: url(/wp-content/uploads/2017/11/OW_SubHero2.jpg);
+    }
+    .img-col-3 {
+        background-image: url(/wp-content/uploads/2017/11/CCRF_SubHero2.jpg);
+    }
+    .img-col-4 {
+        background-image: url(/wp-content/uploads/2017/11/AOP_SubHero2.jpg);
+    }            
     .mobile-cont {
         padding-top: 25px;
         padding-bottom: 40px;
@@ -1181,8 +1193,8 @@ $topenter: -10px;
             p {
                 font-size: 22px;
             }
+                            
             &:first-child {
-                background: url(/wp-content/uploads/2017/10/Ride_SubHero2.jpg);
                 background-position: center center;
                 background-size: cover;
                 min-height: 300px;
