@@ -49,7 +49,17 @@
                 white-space: normal;       
                 @media screen and (max-width: 992px) {
                     top: 50%;
-                }         
+                }
+                @media screen and (max-width: 400px) {
+                    position: absolute;
+                    transform: translate(0, -50%);
+                    text-align: center;
+                    left: 0;
+                    top: 50%;
+                    bottom: 0;
+                    right: 0;
+                    width: 100%;
+                }
             }
         }
         .marketing-col,
@@ -651,12 +661,15 @@ $topenter: -10px;
 #solutions-hero {
     padding: 0px;
     .solutions-bg {
-        background: url(/wp-content/uploads/2017/11/Solutions.jpg);
+        background: url(/wp-content/uploads/2017/11/Solutions-1.jpg);
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
         min-height: 500px;
         background-position: center top;
+        @media screen and (max-width: 400px) {
+            min-height: 250px;
+        }
     }
 }
 .animated {
@@ -1011,11 +1024,14 @@ $topenter: -10px;
 #ow-hero {
     padding: 0px;
     .ow-bg{
-        background: url(/wp-content/uploads/2017/11/Our-Work.jpg);
+        background: url(/wp-content/uploads/2017/11/Our-Work-1.jpg);
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
         min-height: 500px;
+        @media screen and (max-width: 400px) {
+            min-height: 250px;
+        }
     }
 }
 #our-work {
@@ -1062,7 +1078,10 @@ $topenter: -10px;
     
         }      
         p {
-            text-align: center;
+            padding: 0 100px;
+            @media screen and (max-width: 768px) {
+                padding: 0 20px;
+            }
         }
         h4 {
             font-family: $body-font;
@@ -1072,8 +1091,9 @@ $topenter: -10px;
             padding: 0 100px;
             display: block;
             margin: 0 auto;
-            line-height: 34px;
+            line-height: 1.3;
             margin-bottom: 10px;
+            font-size: 1.7rem;
             @media screen and (max-width: 768px) {
                 padding: 0 20px;
             }
@@ -1253,11 +1273,14 @@ $topenter: -10px;
 #about-hero {
     padding: 0px;
     .about-bg {
-        background: url(/wp-content/uploads/2017/11/About-1.jpg);
+        background: url(/wp-content/uploads/2017/11/About-2.jpg);
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
         min-height: 500px;
+        @media screen and (max-width: 400px) {
+            min-height: 250px;
+        }
     }
 }
 #about {
@@ -1634,6 +1657,9 @@ nav.navigation.posts-navigation {
         background-size: cover;
         background-repeat: no-repeat;
         min-height: 500px;
+        @media screen and (max-width: 400px) {
+            min-height: 250px;
+        }
     }
 }
 #press {
@@ -1784,6 +1810,18 @@ ul.footer-site-map {
     }
    
 }
+#privacy-hero {
+    .privacy-bg {
+        background: url(/wp-content/uploads/2017/11/Privacy-Policy.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        min-height: 500px;
+        @media screen and (max-width: 400px) {
+            min-height: 250px;
+        }
+    }
+}
 #privacy-policy {
     margin-bottom: 100px;
     margin-top: 40px;    
@@ -1792,5 +1830,4 @@ ul.footer-site-map {
     margin-bottom: 40px;
     text-transform: none;    
     }
-
 }
