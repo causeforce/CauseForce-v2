@@ -194,16 +194,28 @@
                 if ($(this).hasClass('ow-col')) {
                     $(this).siblings('.col-12.txt-col').children('.onewalk-txt').fadeIn();
                     $(this).siblings('.col-12.txt-col').children().not('.onewalk-txt').fadeOut();
+                    $('html, body').animate({
+                        scrollTop: $(this).offset().top - 20 // Use the id/class of your destination on the page
+                    }, 'slow');
                 }                
                 else if ($(this).hasClass('afp-col')) {
                     $(this).siblings('.col-12.txt-col').children('.afp-txt').fadeIn();
                     $(this).siblings('.col-12.txt-col').children().not('.afp-txt').fadeOut();
+                    $('html, body').animate({
+                        scrollTop: $(this).offset().top - 20 // Use the id/class of your destination on the page
+                    }, 'slow');
                 } else if ($(this).hasClass('ccrf-col')) {
                     $(this).siblings('.col-12.txt-col').children('.ccrf-txt').fadeIn();
                     $(this).siblings('.col-12.txt-col').children().not('.ccrf-txt').fadeOut();
+                    $('html, body').animate({
+                        scrollTop: $(this).offset().top - 20 // Use the id/class of your destination on the page
+                    }, 'slow');
                 }  else if ($(this).hasClass('db-col')) {
                     $(this).siblings('.col-12.txt-col').children('.diabetes-txt').fadeIn();
                     $(this).siblings('.col-12.txt-col').children().not('.diabetes-txt').fadeOut();
+                    $('html, body').animate({
+                        scrollTop: $(this).offset().top - 20 // Use the id/class of your destination on the page
+                    }, 'slow');
                 }
             });
         } else  {
@@ -215,17 +227,29 @@
                 $(this).children('.text-cont').addClass('orange-bg');
                 $(this).siblings('.col-md-3').children('.text-cont').removeClass('orange-bg');
                 if ($(this).hasClass('db-col')) {
-                    $(this).children('.diabetes-txt').slideDown();
-                    $(this).siblings('.col-md-3').children('.mobile-cont').not('.diabetes-txt').slideUp();
+                    $(this).children('.diabetes-txt').fadeIn();
+                    $(this).siblings('.col-md-3').children('.mobile-cont').not('.diabetes-txt').fadeOut();
+                    $('html, body').animate({
+                        scrollTop: $(this).offset().top - 120 // Use the id/class of your destination on the page
+                    }, 'slow');
                 } else if ($(this).hasClass('afp-col')) {
-                    $(this).children('.afp-txt').slideDown();
-                    $(this).siblings('.col-md-3').children('.mobile-cont').not('.afp-txt').slideUp();
+                    $(this).children('.afp-txt').fadeIn();
+                    $(this).siblings('.col-md-3').children('.mobile-cont').not('.afp-txt').fadeOut();
+                    $('html, body').animate({
+                        scrollTop: $(this).offset().top - 120 // Use the id/class of your destination on the page
+                    }, 'slow');
                 } else if ($(this).hasClass('ccrf-col')) {
-                    $(this).children('.ccrf-txt').slideDown();
-                    $(this).siblings('.col-md-3').children('.mobile-cont').not('.ccrf-txt').slideUp();
+                    $(this).children('.ccrf-txt').fadeIn();
+                    $(this).siblings('.col-md-3').children('.mobile-cont').not('.ccrf-txt').fadeOut();
+                    $('html, body').animate({
+                        scrollTop: $(this).offset().top - 120 // Use the id/class of your destination on the page
+                    }, 'slow');
                 } else if ($(this).hasClass('ow-col')) {
-                    $(this).children('.onewalk-txt').slideDown();
-                    $(this).siblings('.col-md-3').children('.mobile-cont').not('.onewalk-txt').slideUp();
+                    $(this).children('.onewalk-txt').fadeIn();
+                    $(this).siblings('.col-md-3').children('.mobile-cont').not('.onewalk-txt').fadeOut();
+                    $('html, body').animate({
+                        scrollTop: $(this).offset().top - 120 // Use the id/class of your destination on the page
+                    }, 'slow');
                 }
             });
         }
