@@ -2,12 +2,12 @@
   <div class="container">
     <?php dynamic_sidebar('sidebar-footer'); ?>
     <div class="row">
-        <div class="col-md-4 col-xs-12">
+        <div class="col-12">
             <a class="brand mobile-brand" href="<?= esc_url(home_url('/')); ?>">
                 <img src="../wp-content/uploads/2017/10/Group-61.svg" alt="">
             </a>
         </div>
-        <div class="col-md-4 col-xs-12">
+        <div class="col-12">
             <ul class="footer-site-map">
                 <li><a href="/about">About</a></li>
                 <li><a href="/solutions">Solutions</a></li>
@@ -16,14 +16,13 @@
                 <li><a href="/contact">Contact</a></li>
                 <li><a href="/privacy-policy">Privacy Policy</a></li>      
             </ul>
-            <p>
-                <strong>&copy;2017 CAUSEFORCE&trade;. All rights reserved.</strong>
-            </p>
-
         </div>
-        <div class="col-md-4 col-xs-12">
+        <div class="col-12">
             <a href="https://www.facebook.com/CauseForce/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
             <a href="https://www.linkedin.com/company/54640/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+             <p>
+                <strong>&copy;2017 CAUSEFORCE&trade;. All rights reserved.</strong>
+            </p>
         </div>
     </div>
   </div>
