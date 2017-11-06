@@ -957,7 +957,9 @@ $topenter: -10px;
 #contact {
     margin-bottom: 40px;
     .inner-container {
-        padding: 0 50px;
+        @media screen and (max-width: 768px) {
+            padding: 0 25px;
+        }
         @media screen and (max-width: 400px) {
             padding: 0px;
         }
@@ -1088,7 +1090,6 @@ $topenter: -10px;
             text-transform: none;
             color: $blue;
             width: 100%;
-            padding: 0 100px;
             display: block;
             margin: 0 auto;
             line-height: 1.3;
@@ -1207,6 +1208,9 @@ $topenter: -10px;
         @media screen and (max-width: 768px) {
             margin-bottom: 30px;
         }
+        p.text-orange{
+            font-family: $body-font;
+        }
 
         .col-md-6 {
             padding: 50px;
@@ -1253,6 +1257,7 @@ $topenter: -10px;
 #our-gray-row {
     .gray-row {
         padding: 50px 20px;
+        padding-top: 80px;        
         h1 {
             font-family: $body-font;
             text-align: center;
