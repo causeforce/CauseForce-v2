@@ -192,18 +192,18 @@
                 $(this).children('.text-cont').addClass('orange-bg');
                 $(this).siblings('.col-md-3').children('.text-cont').removeClass('orange-bg');
                 if ($(this).hasClass('ow-col')) {
-                    $(this).siblings('.col-12.txt-col').children('.onewalk-txt').slideDown();
-                    $(this).siblings('.col-12.txt-col').children().not('.onewalk-txt').slideUp();
+                    $(this).siblings('.col-12.txt-col').children('.onewalk-txt').fadeIn();
+                    $(this).siblings('.col-12.txt-col').children().not('.onewalk-txt').fadeOut();
                 }                
                 else if ($(this).hasClass('afp-col')) {
-                    $(this).siblings('.col-12.txt-col').children('.afp-txt').slideDown();
-                    $(this).siblings('.col-12.txt-col').children().not('.afp-txt').slideUp();
+                    $(this).siblings('.col-12.txt-col').children('.afp-txt').fadeIn();
+                    $(this).siblings('.col-12.txt-col').children().not('.afp-txt').fadeOut();
                 } else if ($(this).hasClass('ccrf-col')) {
-                    $(this).siblings('.col-12.txt-col').children('.ccrf-txt').slideDown();
-                    $(this).siblings('.col-12.txt-col').children().not('.ccrf-txt').slideUp();
+                    $(this).siblings('.col-12.txt-col').children('.ccrf-txt').fadeIn();
+                    $(this).siblings('.col-12.txt-col').children().not('.ccrf-txt').fadeOut();
                 }  else if ($(this).hasClass('db-col')) {
-                    $(this).siblings('.col-12.txt-col').children('.diabetes-txt').slideDown();
-                    $(this).siblings('.col-12.txt-col').children().not('.diabetes-txt').slideUp();
+                    $(this).siblings('.col-12.txt-col').children('.diabetes-txt').fadeIn();
+                    $(this).siblings('.col-12.txt-col').children().not('.diabetes-txt').fadeOut();
                 }
             });
         } else  {

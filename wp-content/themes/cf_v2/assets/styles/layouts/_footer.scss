@@ -5,59 +5,47 @@
     bottom: 0;
     background: $blue;
     color: $white;
-    padding: 50px 0;
-    .col-md-4.col-xs-12 {
-        &:nth-child(2) {
-            p {
-                font-family: $r-font;
-                font-size: 14px;
-                color: $white;
-                strong {
-                    font-family: $b-font;
-                    &:nth-child(2) {
-                        margin-left: 15px;
-                    }
-                }
-                &:last-child {
-                    strong {font-family: $r-font;}
-                }
-                a {
-                    color: $white;
-                }
-            }
-            &:nth-child(2) {
-                padding-left: 70px;
-                @media screen and (max-width: 768px) {
-                    padding-left: initial;
-                }
-            }
-            &:last-child {
-                text-align: center;
-            }
-        }
-    }
-    @media screen and (max-width: 768px) {
-        .col-md-4.col-xs-12 {
-            text-align: center;
-            &:nth-child(2) {
-                margin-bottom: 20px;
-            }
-            .brand.mobile-brand {
-                display: block;
-                text-align: center;
-                margin-bottom: 20px;
-            }
-            p {
-                color: $white;
-            }
-        }
-    }
-    @media screen and (max-width: 400px) {
+    padding: 25px 0;
+    .col-12{
         .mobile-brand {
             img {
+                max-width: 350px;
                 width: 100%;
-                padding: 0 30px;
+                display: block;
+                margin: 0 auto;
+                margin-bottom: 20px;
             }
+        }
+        ul.footer-site-map {
+            width: 100%;
+            text-align: center;
+            padding: 20px 0px;
+            font-family: $r-font;
+            margin-bottom: 0px;
+            li {
+                display: inline-block;
+                margin-right: 20px;
+                margin-bottom: 15px;
+            }
+        }
+        .social-container {
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 25px;
+            .fa {
+                font-size: 40px;
+            }
+        }
+        p {
+            color: $white;
+            text-align: center;
+            font-family: $r-font;
+            strong {
+                font-family: $b-font;
+            }
+        }
+        a {
+            color: $white;
         }
     }
 }
