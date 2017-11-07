@@ -3,7 +3,14 @@
 // ***                    *** //
 
 .home-hero {
-    height: calc(107vh + 1px);
+    height: 104vh;
+    max-height: 1140px;
+    .hero-row {
+        max-height: 1140px;
+        @media screen and (max-width:992px) {
+            max-height: auto;
+        }
+    }
     .yellow-bar {
         width: 10%;
         height: 15px;
