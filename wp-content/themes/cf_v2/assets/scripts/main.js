@@ -479,10 +479,21 @@
 
 
       },
-      finalize: function() {        
+        finalize: function() {        
 
 
-      }
+        }
+    },
+    'contact': {
+        init: function() {
+
+      },
+        finalize: function() {
+            if ($('.form-fields input').val == '') {
+                $(this).parent('span:before').fadeOut();
+            }
+
+        }
     },
 
 
