@@ -16,11 +16,19 @@ $white: #ffffff;
 // Fonts
 @font-face {
     font-family: 'Din Reg';
-    src: url('../../assets/fonts/DINNextLTPro-Regular.woff') format('woff');
+    src: url('../../assets/fonts/DINNextLTPro-Regular.otf') format("opentype"),
+         url('../../assets/fonts/DINNextLTPro-Regular.ttf') format("truetype"),
+         url('../../assets/fonts/DINNextLTPro-Regular.woff') format("woff");
+         
+    
 }
 @font-face {
     font-family: 'Din Bold';
-    src: url('../../assets/fonts/DINNextLTPro-Bold.woff') format('woff');
+    src: url('../../assets/fonts/DINNextLTPro-Bold.otf') format("opentype"),
+         url('../../assets/fonts/DINNextLTPro-Bold.ttf') format("truetype"),
+         url('../../assets/fonts/DINNextLTPro-Bold.woff') format("woff");
+         
+    
 }
 @font-face {
     font-family: 'Font Awesome';
