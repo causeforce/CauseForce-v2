@@ -483,20 +483,7 @@
 
 
         }
-    },
-    'contact': {
-        init: function() {
-
-      },
-        finalize: function() {
-            if ($('.form-fields input').val == '') {
-                $(this).parent('span:before').fadeOut();
-            }
-
-        }
-    },
-
-
+    }
   };
 
   // The routing fires all common scripts, followed by the page specific scripts.
