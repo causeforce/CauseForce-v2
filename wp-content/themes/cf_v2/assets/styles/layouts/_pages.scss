@@ -44,7 +44,7 @@
             background: $blue;
             h1 {
                 position: absolute;
-                top: 41%;
+                top: 50%;
                 left: 50%;
                 transform: translate(-50%,-50%);
                 font-size: 2vw;
@@ -1340,12 +1340,33 @@ $topenter: -10px;
     .row-03{
         .col-md-3 {
             margin-bottom: 40px;
+            &:hover {
+                a.text-blue {
+                    &:before {
+                        transform:  scaleX(1);
+                    }
+                }
+            }
             img {
                 margin-bottom: 20px;
                 cursor: pointer;
                 -webkit-cursor: pointer;
                 @media screen and (max-width: 768px) {
                     margin-bottom: auto;
+                }
+            }
+            a.text-blue {
+                position: relative;
+                &:before {
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 2px;
+                    background: $orange;
+                    transform: scaleX(0);
+                    transition: all 0.2s ease-in-out;
                 }
             }
         }

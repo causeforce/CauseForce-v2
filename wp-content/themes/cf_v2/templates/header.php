@@ -27,14 +27,12 @@
                         endif;
                         ?>
                     </div>
+                    <div class="mobile-footer">
+                        <a href="https://www.facebook.com/CauseForce/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                        <a href="https://www.linkedin.com/company/54640/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                    </div>
                </div>
            </div>
-           <div class="row mobile-footer">
-                <div class="col-12">
-                    <a href="https://www.facebook.com/CauseForce/"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-                    <a href="https://www.linkedin.com/company/54640/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-                </div>
-            </div>
         </div>
     </div>
   </div>
