@@ -44,14 +44,14 @@
             background: $blue;
             h1 {
                 position: absolute;
-                top: 50%;
+                top: 40%;
                 left: 50%;
                 transform: translate(-50%,-50%);
                 font-size: 2vw;
                 font-family: $body-font;
                 color: $white;
                 width: 100%;
-                font-size: 38px;
+                font-size: 31px;
                 text-transform: none;
                 padding-left: 25px;
                 padding-right: 25px;
@@ -223,7 +223,7 @@
         max-width: 80%;
         margin: 0 auto;
         @media screen and (min-width: 996px) {
-            margin-top: 200px;
+            margin-top: 255px;
         }
 
         @media screen and (max-width:768px) {
