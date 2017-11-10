@@ -230,25 +230,25 @@
                     $(this).children('.diabetes-txt').fadeIn();
                     $(this).siblings('.col-md-3').children('.mobile-cont').not('.diabetes-txt').fadeOut();
                     $('html, body').animate({
-                        scrollTop: $(this).offset().top - 120 // Use the id/class of your destination on the page
+                        scrollTop: $(this).offset().top - 20 // Use the id/class of your destination on the page
                     }, 'slow');
                 } else if ($(this).hasClass('afp-col')) {
                     $(this).children('.afp-txt').fadeIn();
                     $(this).siblings('.col-md-3').children('.mobile-cont').not('.afp-txt').fadeOut();
                     $('html, body').animate({
-                        scrollTop: $(this).offset().top - 120 // Use the id/class of your destination on the page
+                        scrollTop: $(this).offset().top - 20 // Use the id/class of your destination on the page
                     }, 'slow');
                 } else if ($(this).hasClass('ccrf-col')) {
                     $(this).children('.ccrf-txt').fadeIn();
                     $(this).siblings('.col-md-3').children('.mobile-cont').not('.ccrf-txt').fadeOut();
                     $('html, body').animate({
-                        scrollTop: $(this).offset().top - 120 // Use the id/class of your destination on the page
+                        scrollTop: $(this).offset().top - 20 // Use the id/class of your destination on the page
                     }, 'slow');
                 } else if ($(this).hasClass('ow-col')) {
                     $(this).children('.onewalk-txt').fadeIn();
                     $(this).siblings('.col-md-3').children('.mobile-cont').not('.onewalk-txt').fadeOut();
                     $('html, body').animate({
-                        scrollTop: $(this).offset().top - 120 // Use the id/class of your destination on the page
+                        scrollTop: $(this).offset().top - 20 // Use the id/class of your destination on the page
                     }, 'slow');
                 }
             });

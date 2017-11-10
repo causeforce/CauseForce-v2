@@ -102,7 +102,9 @@ input.wpcf7-form-control.wpcf7-text {
         @extend .orange-btn-form;
     }
 }
-
+div.wpcf7 {
+    margin-top: 20px;
+}
 div.wpcf7-mail-sent-ok {
     border-color: $orange;
 }
