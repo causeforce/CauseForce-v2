@@ -1719,7 +1719,7 @@ nav.navigation.posts-navigation {
                 color: $blue;
                 margin-bottom: 20px;
                 @media screen and (max-width: 768px) {
-                    text-align: center;
+                    text-align: left;
                 }
 
             }
@@ -1730,7 +1730,7 @@ nav.navigation.posts-navigation {
                     margin-bottom: 0px;
                 }
                 @media screen and (max-width: 768px) {
-                    text-align: center;
+                    text-align: left;
                 }                
             }
             p.text-orange, img {
@@ -1740,8 +1740,8 @@ nav.navigation.posts-navigation {
                 margin-top: 20px;
                 padding: 10px 20px;
                 @media screen and (max-width: 768px) {
-                    text-align: center;
-                    display: block;
+                    text-align: left;
+                   
                     margin: 20px auto 10px auto;
                 }                
             }
