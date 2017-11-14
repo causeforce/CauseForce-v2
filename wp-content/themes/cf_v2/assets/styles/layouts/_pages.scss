@@ -215,6 +215,10 @@
     max-width: 70px;
     z-index: 80;
     margin-top: 25px;    
+        svg {
+            max-height: 70px;
+            max-width: 70px;
+        }
     }
     .cls-1, .cls-2, .cls-4 {
     fill: transparent;
