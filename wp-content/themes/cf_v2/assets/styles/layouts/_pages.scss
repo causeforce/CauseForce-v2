@@ -757,6 +757,9 @@ $topenter: -10px;
     list-style-type: none;
 }
 #solutions-wrapper {
+    a.orange-btn.mx-auto {
+        margin-top: 50px;
+    }
     p {
         font-size: 18px;
     }
@@ -1043,7 +1046,7 @@ $topenter: -10px;
 #ow-hero {
     padding: 0px;
     .ow-bg{
-        background: url(/wp-content/uploads/2017/11/Our-Work-1.jpg);
+        background: url(/wp-content/uploads/2017/11/1@2x.png);
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -1099,7 +1102,7 @@ $topenter: -10px;
         p {
             padding: 0 100px;
             @media screen and (max-width: 768px) {
-                padding: 0 20px;
+                padding: 0 20px !important;
             }
         }
         h4 {
@@ -1295,7 +1298,7 @@ $topenter: -10px;
 #about-hero {
     padding: 0px;
     .about-bg {
-        background: url(/wp-content/uploads/2017/11/About-2.jpg);
+        background: url(/wp-content/uploads/2017/11/3@2x.jpg);
         background-position: center center;
         background-size: cover;
         background-repeat: no-repeat;
