@@ -30,6 +30,15 @@ $white: #ffffff;
          
     
 }
+
+@font-face {
+    font-family: 'Din Med';
+    src: url('../../assets/fonts/DINNextLTPro-Medium.otf') format("opentype"),
+         url('../../assets/fonts/DINNextLTPro-Medium.ttf') format("truetype"),
+         url('../../assets/fonts/DINNextLTPro-Medium.woff') format("woff");
+         
+    
+}
 @font-face {
     font-family: 'Font Awesome';
     src: url('../../assets/fonts/FontAwesome/fonts/fontawesome-webfont.ttf') format("ttf"),
@@ -42,3 +51,4 @@ $white: #ffffff;
 $body-font: 'Vesper Libre', Arial, serif;
 $b-font: 'Din Bold', Arial, sans-serif;
 $r-font: 'Din Reg', Arial, sans-serif;
+$m-font: 'Din Med', Arial, sans-serif;
