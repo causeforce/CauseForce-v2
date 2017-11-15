@@ -136,6 +136,9 @@
             }, { 
                 offset: '70%'
         });
+
+
+
       },
       finalize: function() {
         // JavaScript to be fired on the home page, after the init JS
