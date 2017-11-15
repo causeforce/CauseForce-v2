@@ -48,10 +48,28 @@
           
         // ON Scroll Up/Down to show/hide Infinite CF Logo
         var windowSize = $(window).width();
+
+        if (windowSize < 992) {
+            $(".site-map-links").removeClass("justify-content-around");
+            $(".site-map-links").removeClass("d-flex");
+            
+        }
+
+        $(window).on('resize', function(){
+            console.log($(window).width());
+            if ($(window).width() < 992) {
+                $(".site-map-links").removeClass("justify-content-around");
+                $(".site-map-links").removeClass("d-flex");
+                
+            } else {
+                $(".site-map-links").addClass("justify-content-around");
+                $(".site-map-links").addClass("d-flex");      
+            }
+        });
           
         $(window).on('scroll', function() {
             
-            if ($(window).scrollTop() > 70) {
+            if ($(window).scrollTop() > 60) {
                 $('header.banner').addClass('fixed-nav');
                 $('.menu-cont > .brand > img:eq(0)').css({
                     opacity: 0,

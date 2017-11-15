@@ -1,11 +1,38 @@
 .cf-footer {
-    position: absolute;
+    .social-container {
+        text-align: center;
+    }
+    @media screen and (max-width:768px) {
+        .mobile-brand-cont {
+            padding-bottom: 15px
+        }
+        .site-map-links{
+            margin-bottom: 15px;
+            a {
+                padding-right: 15px;
+                font-family: $r-font !important;
+            }
+        }
+        .social-container {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .copyright-footer {
+            text-align: left !important;
+        }
+    }
+    .copyright-footer {
+        text-align: center;
+        font-family: $r-font;
+    }
+    
+    position: relative;
     left: 0;
     right: 0;
     bottom: 0;
     background: $blue;
     color: $white;
-    padding: 25px 0;
+    padding: 50px 15px;
     .col-12{
         .mobile-brand {
             img {
