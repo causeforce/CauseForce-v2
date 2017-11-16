@@ -189,13 +189,13 @@
 
         // column clicks route to selected solutions section
         $(".marketing-col, .marketing-col h1, .marketing-col svg").on("click", function(){
-             window.location = "http://staging.causeforce.com/solutions/#marketing-digital";
+             window.location = "http://www.causeforce.com/solutions/#marketing-digital";
         });
         $(".fund-col, .fund-col h1, .fund-col svg").on("click", function(){
-             window.location = "http://staging.causeforce.com/solutions/#fundraiser";
+             window.location = "http://www.causeforce.com/solutions/#fundraiser";
         });
         $(".events-col, .events-col h1, .events-col svg").on("click", function(){
-             window.location = "http://staging.causeforce.com/solutions/#events";
+             window.location = "http://www.causeforce.com/solutions/#events";
         });
         
 
