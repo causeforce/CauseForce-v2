@@ -8,4 +8,25 @@
     <link href="https://fonts.googleapis.com/css?family=Vesper+Libre" rel="stylesheet">
     <link rel="stylesheet" href="../wp-content/themes/cf_v2/assets/styles/animate/animate.min.css">
     <?php wp_head(); ?>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src=“https://www.googletagmanager.com/gtag/js?id=UA-89878215-6“></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag(‘js’, new Date());
+
+    gtag(‘config’, ‘UA-89878215-6’);
+    </script>
+    <!-- Hotjar Tracking Code for http://causeforce.com -->
+    <script>
+        (function(h,o,t,j,a,r){
+            h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+            h._hjSettings={hjid:693816,hjsv:6};
+            a=o.getElementsByTagName('head')[0];
+            r=o.createElement('script');r.async=1;
+            r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>    
 </head>
