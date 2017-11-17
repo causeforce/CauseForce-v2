@@ -91,8 +91,9 @@
         // JavaScript to be fired on all pages, after page specific JS is fired
         
         // Press page js since press page lives inside index.php must be global code else it won't work
-        var pressLink = $('#press .row-01 .col-md-6 a').attr('href');
+        var pressLink = $('#press .row-01 .col-md-6 div a').attr('href');
         $('.press-ft-link').attr('href', pressLink);
+        $('#press .row-01 .col-md-6 h3 a').attr('href', pressLink);
       }
     },
     // Home page
