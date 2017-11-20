@@ -140,14 +140,20 @@
       <ul>
         <li>Brand Development/Rehab</li>
         <li>Event Concept Development</li>
-        <li class="li-indented">Key Message Development</li>
+        <ul>
+          <li>Key Message Development</li>
+        </ul>
+       
         <li>Case for Support</li>
         <li>Visual Identity</li>
         <li>Content</li>
-        <li class="li-indented">TV/Radio Creative</li>
-        <li class="li-indented">Video</li>
-        <li class="li-indented">Social Content</li>
-        <li class="li-indented">Blog Posts</li>
+        <ul>
+          <li>TV/Radio Creative</li>
+          <li>Video</li>
+          <li>Social Content</li>
+          <li>Blog Posts</li>
+        </ul>
+
       </ul>
     </div>
   </div>
@@ -155,14 +161,20 @@
     <h5>Media &amp; Acquisitions</h5>
     <ul>
       <li>Media Strategy and Planning</li>
-      <li class="li-indented">Content Partnerships</li>
-      <li class="li-indented">Media Sponsorships</li>
+      <ul>
+        <li>Content Partnerships</li>
+        <li>Media Sponsorships</li>
+      </ul>
+
       <li>Target Audience/Persona Mapping</li>
       <li>Fundraiser/Donor Lead Generation</li>
       <li>Digital Media Activation</li>
-      <li class="li-indented">Facebook/Social Advertising</li>
-      <li class="li-indented">Google Grand Application</li>
-      <li class="li-indented">Search Engine Marketing</li>
+      <ul>
+        <li>Facebook/Social Advertising</li>
+        <li>Google Grand Application</li>
+        <li>Search Engine Marketing</li>
+      </ul>
+
       <li>Analytics and Reporting</li>
     </ul>
   </div>
@@ -184,7 +196,7 @@
       <li>Media Partner Actiation</li>
       <li>Local Media</li>
       <li>Public Relations</li>
-      <li>Crisis Management Communications</li>
+      <li>Crisis Management</li>
       <li>Event Scripting &amp; Speechwriting</li>
     </ul>
   </div>
@@ -387,7 +399,7 @@
         <li>Entertainment and Digital Media</li>
         <li>Sponsor Activation</li>
         <li>Ceremonies Production</li>
-        <li>A /V and Staging</li>
+        <li>A/V and Staging</li>
         <li>Virtual and Digital Experiences</li>
         <li>Sourcing and Vendor Management</li>
         <li>Emergency Planning &amp; Risk Management
@@ -419,7 +431,7 @@
       <li>Receipting (Online/Offline)</li>
       <li>Financial Reporting</li>
       <li>Budget Management</li>
-      <li>A /R &amp; A /P</li>
+      <li>A/R &amp; A/P</li>
       <li>Payroll</li>
     </ul>
   </div>
