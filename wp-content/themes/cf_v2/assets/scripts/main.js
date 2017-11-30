@@ -495,6 +495,113 @@
         
       }
     },
+    // Home page
+    'home-v2': {
+      init: function() {
+        // JavaScript to be fired on the home page
+        $(".gray-row").waypoint(function(){
+            var myLivicons = $('.col-md-1 span');
+            var globeIcon = $('.row .col-md-1:eq(2) span');
+            myLivicons.playLiviconEvo({
+                duration: 'default',
+                repeat: '1'
+            });
+            globeIcon.playLiviconEvo({
+                duration: 'default',
+                repeat: '3'
+            });
+        // $('.gray-row').fadeToggle();
+//            $('.square').addClass('show');
+//            $('#graph').addClass('show');
+            }, { 
+                offset: '98%'
+        });
+        $(".col-pic-row").waypoint(function(){
+            $('.text-col').addClass('show');
+            }, { 
+                offset: '50%'
+        });       
+        $(".col-pic-row").waypoint(function(){
+            $('.picture-col').addClass('show');
+            }, { 
+                offset: '65%'
+        });
+        $(".ready-row").waypoint(function(){
+            $('.talk-col').addClass('show');
+            }, { 
+                offset: '95%'
+        });
+        $(".ready-row").waypoint(function(){
+            $('.orange-btn').addClass('show');
+            }, { 
+                offset: '70%'
+        });
+
+
+
+      },
+      finalize: function() {
+        // JavaScript to be fired on the home page, after the init JS
+
+        function hoverVideo(e) {  
+            $('video', this).get(0).play(); 
+        }
+
+        function hideVideo(e) {
+            $('video', this).get(0).pause(); 
+        }
+          
+        // var figure = $(".jquery-background-video-wrapper").hover( hoverVideo, hideVideo );
+        var figure = $(".jquery-background-video-wrapper").hover( hoverVideo, hideVideo );
+
+        //== Home inner container hovers ==\\
+          
+        // First Video Column
+        $('.home-inner-container.home-vid-1 .svg-container, .home-inner-container.home-vid-1 h1,.home-inner-container.home-vid-1 svg').on("mouseenter", function(){
+            $('video').get(0).play();
+        });
+        $('.video-overlay.overlay-1').on('mouseenter', function(){
+           var playLivicons = $('.col.align-self-center.home-inner-container.home-vid-1 span');
+            playLivicons.playLiviconEvo({
+                duration: 'default'
+            }); 
+        });
+        // Second video column
+        $('.home-inner-container.home-vid-2 .svg-container, .home-inner-container.home-vid-2 h1,.home-inner-container.home-vid-2 svg').on("mouseenter", function(){
+            $('video').get(1).play();  
+        });
+        $('.video-overlay.overlay-2').on('mouseenter', function(){
+           var playLivicons = $('.col.align-self-center.home-inner-container.home-vid-2 span');
+            playLivicons.playLiviconEvo({
+                duration: 'default'
+            }); 
+        });
+        // Third Video Column
+        $('.home-inner-container.home-vid-3 .svg-container, .home-inner-container.home-vid-3 h1,.home-inner-container.home-vid-3 svg').on("mouseenter", function(){
+            $('video').get(2).play();
+        });
+        $('.video-overlay.overlay-3').on('mouseenter', function(){
+           var playLivicons = $('.col.align-self-center.home-inner-container.home-vid-3 span');
+            playLivicons.playLiviconEvo({
+                duration: 'default'
+            }); 
+        });
+
+        // column clicks route to selected solutions section
+        $(".marketing-col, .marketing-col h1, .marketing-col svg").on("click", function(){
+             window.location = "http://www.causeforce.com/solutions/#marketing-digital";
+        });
+        $(".fund-col, .fund-col h1, .fund-col svg").on("click", function(){
+             window.location = "http://www.causeforce.com/solutions/#fundraiser";
+        });
+        $(".events-col, .events-col h1, .events-col svg").on("click", function(){
+             window.location = "http://www.causeforce.com/solutions/#events";
+        });
+        
+
+
+      }
+    },
     'newhome': {
         init: function() {
 
