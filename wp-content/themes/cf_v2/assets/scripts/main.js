@@ -491,12 +491,11 @@
             { 
             offset: '85%'
             });        
-
         
       }
     },
     // Home page
-    'home-v2': {
+    'home_v2': {
       init: function() {
         // JavaScript to be fired on the home page
         $(".gray-row").waypoint(function(){
@@ -536,8 +535,6 @@
             }, { 
                 offset: '70%'
         });
-
-
 
       },
       finalize: function() {
@@ -597,15 +594,12 @@
         $(".events-col, .events-col h1, .events-col svg").on("click", function(){
              window.location = "http://www.causeforce.com/solutions/#events";
         });
-        
-
 
       }
     },
-    'newhome': {
+    'test': {
         init: function() {
-
-
+            // Leave this here for testing, can be deleted if need be.
 
       },
         finalize: function() {        
