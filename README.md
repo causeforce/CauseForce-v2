@@ -1,2 +1,3 @@
-#Custom Wordpress Theme
-private use for CauseForce.com
+# AngularOci
+
+This project was created for CauseForce.com.
