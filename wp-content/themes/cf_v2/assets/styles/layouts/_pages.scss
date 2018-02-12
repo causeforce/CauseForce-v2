@@ -1476,8 +1476,9 @@ $topenter: -10px;
         z-index: 99;
         cursor: pointer;
         @media screen and (max-width: 400px) {
-            top: -6px;
-            right: -35px;
+            top: -5px;
+            right: -5px;
+            padding: 0px;
             margin: 0;
             text-align: initial;
         }
@@ -1888,5 +1889,39 @@ nav.navigation.posts-navigation {
     margin-top: 30px;
     margin-bottom: 40px;
     text-transform: none;    
+    }
+}
+
+//blog content
+.single {
+    .container {
+        margin-top: 200px;
+
+        @media (max-width:768px) {
+            margin-top: 100px;
+        }
+    }
+    h1.entry-title {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    .post-img {
+        text-align: center;
+
+        img {
+            max-width: 100% !important;
+            height: auto;
+        }
+    }
+    .entry-content {
+        margin-top: 50px;
+        margin-bottom: 100px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+
+        p {
+            font-family: Din Reg, Arial, sans-serif;
+        }
     }
 }
